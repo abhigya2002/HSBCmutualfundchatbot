@@ -1,0 +1,9 @@
+{
+  "phase": "3.5",
+  "activated_at_utc": "2026-05-19T08:10:56.154140+00:00",
+  "index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "keyword_index_dir": "indexes/keyword/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "bm25_index_path": "indexes/keyword/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/bm25_index.json",
+  "chunk_count": 134,
+  "aligned_vector_index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04"
+}

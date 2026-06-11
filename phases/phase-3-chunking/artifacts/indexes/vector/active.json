@@ -1,0 +1,11 @@
+{
+  "phase": "3.4",
+  "activated_at_utc": "2026-05-19T08:10:55.948526+00:00",
+  "index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "embedding_model_id": "hash-embedding-v1",
+  "provider": "hash_v1",
+  "dimensions": 384,
+  "chunk_count": 134,
+  "embeddings_dir": "embeddings/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "vector_index_dir": "indexes/vector/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04"
+}

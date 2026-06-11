@@ -1,5 +1,6 @@
 artifacts/eval/*
 artifacts/service/*
+!artifacts/service/phase6_generation_handoff.json
 artifacts/logs/*
 !artifacts/eval/.gitkeep
 !artifacts/service/.gitkeep

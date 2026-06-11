@@ -69,12 +69,33 @@ phases/**/artifacts/metadata/
 phases/**/artifacts/quarantine/
 phases/**/artifacts/chunks/
 phases/**/artifacts/chunks_validated/
-phases/**/artifacts/embeddings/
-phases/**/artifacts/indexes/
 phases/**/artifacts/snapshots/
 phases/**/artifacts/logs/
 phases/**/artifacts/eval/
-phases/**/artifacts/service/
+
+# Embeddings — ignore all except active production index (Railway /ready + /chat)
+phases/**/artifacts/embeddings/**
+!phases/phase-3-chunking/artifacts/embeddings/
+!phases/phase-3-chunking/artifacts/embeddings/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/
+!phases/phase-3-chunking/artifacts/embeddings/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/**
+
+# Vector / keyword indexes — ignore all except active production index
+phases/**/artifacts/indexes/**
+!phases/phase-3-chunking/artifacts/indexes/
+!phases/phase-3-chunking/artifacts/indexes/vector/
+!phases/phase-3-chunking/artifacts/indexes/vector/active.json
+!phases/phase-3-chunking/artifacts/indexes/vector/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/
+!phases/phase-3-chunking/artifacts/indexes/vector/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/**
+!phases/phase-3-indexing/artifacts/indexes/
+!phases/phase-3-indexing/artifacts/indexes/keyword/
+!phases/phase-3-indexing/artifacts/indexes/keyword/active.json
+!phases/phase-3-indexing/artifacts/indexes/keyword/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/
+!phases/phase-3-indexing/artifacts/indexes/keyword/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/**
+
+# Phase 5 generation handoff (required by GenerationService wiring)
+phases/**/artifacts/service/**
+!phases/phase-5-guardrails/artifacts/service/
+!phases/phase-5-guardrails/artifacts/service/phase6_generation_handoff.json
 
 # Keep artifact directory placeholders if present
 !phases/**/artifacts/**/.gitkeep

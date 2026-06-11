@@ -1,0 +1,54 @@
+{
+  "phase": "3.5",
+  "phase_3_5_version": "3.5.0",
+  "generated_at_utc": "2026-05-19T08:10:56.154140+00:00",
+  "index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "shared_merge_keys": [
+    "chunk_id",
+    "source_url",
+    "scheme"
+  ],
+  "optional_merge_keys": [
+    "section_title",
+    "effective_date",
+    "compliance_rank"
+  ],
+  "vector_channel": {
+    "active_pointer": "phase-3-chunking/artifacts/indexes/vector/active.json",
+    "index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+    "embedding_model_id": "hash-embedding-v1",
+    "vector_index_dir": "D:\\RAG Chatbot\\phases\\phase-3-chunking\\artifacts\\indexes\\vector\\idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04"
+  },
+  "keyword_channel": {
+    "active_pointer": "phase-3-indexing/artifacts/indexes/keyword/active.json",
+    "index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+    "keyword_index_dir": "D:\\RAG Chatbot\\phases\\phase-3-indexing\\artifacts\\indexes\\keyword\\idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+    "algorithm": "bm25",
+    "manifest": {
+      "phase": "3.5",
+      "index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+      "algorithm": "bm25",
+      "built_at_utc": "2026-05-19T08:10:56.138100+00:00",
+      "aligned_vector_index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+      "embedding_model_id": "hash-embedding-v1",
+      "document_count": 134,
+      "term_count": 1681,
+      "shared_merge_keys": [
+        "chunk_id",
+        "source_url",
+        "scheme"
+      ],
+      "bm25_k1": 1.5,
+      "bm25_b": 0.75
+    }
+  },
+  "hybrid_policy": {
+    "merge_strategy": "union_by_chunk_id",
+    "score_normalization": "per_channel_minmax",
+    "keyword_empty_fallback": "vector",
+    "stopword_only_query_use_vector": true,
+    "scheme_aliases": "query_side_only",
+    "citation_allowlist": "phase-1 source_registry 16 Groww URLs"
+  },
+  "chunk_count": 134
+}

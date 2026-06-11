@@ -1,0 +1,9 @@
+{
+  "phase": "3.4",
+  "index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "embedding_model_id": "hash-embedding-v1",
+  "dimensions": 384,
+  "chunk_count": 134,
+  "embeddings_path": "D:\\RAG Chatbot\\phases\\phase-3-chunking\\artifacts\\embeddings\\idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04\\vectors.json",
+  "records_path": "D:\\RAG Chatbot\\phases\\phase-3-chunking\\artifacts\\indexes\\vector\\idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04\\chunk_records.json"
+}

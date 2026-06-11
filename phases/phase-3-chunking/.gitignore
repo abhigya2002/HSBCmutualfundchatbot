@@ -2,8 +2,14 @@ artifacts/chunks/*
 !artifacts/chunks/.gitkeep
 artifacts/embeddings/*
 !artifacts/embeddings/.gitkeep
+!artifacts/embeddings/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/
+!artifacts/embeddings/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/**
 artifacts/indexes/*
 !artifacts/indexes/.gitkeep
+!artifacts/indexes/vector/
+!artifacts/indexes/vector/active.json
+!artifacts/indexes/vector/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/
+!artifacts/indexes/vector/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/**
 artifacts/logs/*
 !artifacts/logs/.gitkeep
 artifacts/phase3_1_dry_manifest.json
@@ -18,3 +24,10 @@ artifacts/embeddings/**/*
 !artifacts/embeddings/.gitkeep
 artifacts/indexes/vector/**/*
 !artifacts/indexes/vector/.gitkeep
+!artifacts/indexes/vector/active.json
+!artifacts/indexes/vector/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/
+!artifacts/indexes/vector/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/**
+artifacts/embeddings/**/*
+!artifacts/embeddings/.gitkeep
+!artifacts/embeddings/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/
+!artifacts/embeddings/idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04/**

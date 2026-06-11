@@ -1,0 +1,17 @@
+{
+  "phase": "3.5",
+  "index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "algorithm": "bm25",
+  "built_at_utc": "2026-05-19T08:10:56.138100+00:00",
+  "aligned_vector_index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "embedding_model_id": "hash-embedding-v1",
+  "document_count": 134,
+  "term_count": 1681,
+  "shared_merge_keys": [
+    "chunk_id",
+    "source_url",
+    "scheme"
+  ],
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75
+}

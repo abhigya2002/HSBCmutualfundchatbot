@@ -1,0 +1,42 @@
+{
+  "phase": "3.6",
+  "phase_3_6_version": "3.6.0",
+  "generated_at_utc": "2026-05-19T08:10:56.264811+00:00",
+  "index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "index_manifest_summary": {
+    "partial_corpus": false,
+    "schemes_indexable": 16,
+    "total_chunks": 134,
+    "benchmark_passed": true
+  },
+  "paths": {
+    "chunking_workspace": "D:\\RAG Chatbot\\phases\\phase-3-chunking",
+    "indexing_workspace": "D:\\RAG Chatbot\\phases\\phase-3-indexing",
+    "vector_active_pointer": "phase-3-chunking/artifacts/indexes/vector/active.json",
+    "keyword_active_pointer": "phase-3-indexing/artifacts/indexes/keyword/active.json",
+    "hybrid_contract": "phase-3-indexing/artifacts/hybrid_retrieval_contract.json",
+    "retrieval_benchmark": "phase-3-indexing/benchmarks/retrieval_benchmark.json"
+  },
+  "hybrid_api_surface": {
+    "search": "hybrid_search(query, top_k, scheme?, source_url?)",
+    "merge_keys": [
+      "chunk_id",
+      "source_url",
+      "scheme"
+    ],
+    "keyword_empty_fallback": "vector",
+    "filter_rules": {
+      "source_url": "must be one of 16 allowlisted Groww URLs (Phase 1 registry)",
+      "no_off_corpus_urls": true
+    }
+  },
+  "version_pins": {
+    "index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+    "embedding_model_id": "hash-embedding-v1"
+  },
+  "benchmark_summary": {
+    "recall_at_k": 1.0,
+    "k": 5,
+    "passed": true
+  }
+}
