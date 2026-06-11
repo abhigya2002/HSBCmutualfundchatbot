@@ -1,2 +1,7 @@
+# Root requirements — used by Railway/Railpack and local Groq diagnostics.
+# Phase 6 API deps are consolidated here so the build does not need nested paths.
 groq>=0.11.0
 python-dotenv>=1.0.0
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+httpx>=0.27.0
