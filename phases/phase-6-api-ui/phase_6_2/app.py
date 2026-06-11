@@ -36,6 +36,8 @@ def create_app(
 
     cors = dict(cfg.get("cors") or {})
     origins = [str(x) for x in (cors.get("dev_origins") or [])]
+    origins.extend(str(x) for x in (cors.get("prod_origins") or []))
+    origins = list(dict.fromkeys(origins))
     if origins:
         app.add_middleware(
             CORSMiddleware,

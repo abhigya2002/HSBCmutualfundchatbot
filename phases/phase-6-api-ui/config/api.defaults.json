@@ -35,7 +35,10 @@
       "http://127.0.0.1:8000",
       "http://localhost:8000"
     ],
-    "prod_origins": []
+    "prod_origins": [
+      "https://hsb-cmutualfundchatbot-w6v9.vercel.app",
+      "https://hsb-cmutualfundchatbot.vercel.app"
+    ]
   },
   "logging": {
     "level": "INFO",
