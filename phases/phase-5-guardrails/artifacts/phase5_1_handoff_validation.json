@@ -1,0 +1,44 @@
+{
+  "phase": "5.1",
+  "phase_5_1_version": "5.1.0",
+  "generated_at_utc": "2026-06-01T18:52:51.712261+00:00",
+  "handoff_path": "D:\\RAG Chatbot\\phases\\phase-4-retrieval\\artifacts\\service\\phase5_retrieval_handoff.json",
+  "index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "embedding_model_id": "hash-embedding-v1",
+  "registry_entry_count": 16,
+  "composer": {
+    "max_sentences": 3,
+    "citation_format": "markdown_link",
+    "default_citation_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth",
+    "footer_template": "Last updated from sources: {date}",
+    "disclaimer_line": "Facts-only. No investment advice."
+  },
+  "prohibited_phrase_counts": {
+    "advisory": 9,
+    "comparison": 6,
+    "projection": 6,
+    "injection": 6,
+    "regex": 3
+  },
+  "refusal_types": [
+    "advisory",
+    "comparison",
+    "mixed_intent",
+    "out_of_scope",
+    "disambiguate",
+    "performance_info"
+  ],
+  "evidence_fields_found": [
+    "chunk_id",
+    "chunk_text",
+    "citation_url",
+    "section_title",
+    "effective_date",
+    "scheme",
+    "scores.final_score",
+    "ranked_candidates"
+  ],
+  "ready_for_phase_5_2": true,
+  "errors": [],
+  "warnings": []
+}

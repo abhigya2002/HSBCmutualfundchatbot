@@ -1,0 +1,104 @@
+{
+  "benchmark_version": "1.0.0",
+  "description": "Phase 5.4 factual composer — shape, citation, footer, number grounding.",
+  "cases": [
+    {
+      "id": "F01",
+      "query": "What is the expense ratio of HSBC Gilt Fund Direct Growth?",
+      "retrieval": {
+        "status": "found",
+        "query": "What is the expense ratio of HSBC Gilt Fund Direct Growth?",
+        "chunk_id": "hsbc-gilt-fund-direct-growth_c0000",
+        "chunk_text": "Fund size (AUM) ₹177.37 Cr Expense ratio 0.48% Rating 2",
+        "citation_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+        "section_title": "Fund overview",
+        "effective_date": "2026-05-13T17:37:53.697902+00:00",
+        "scheme": "hsbc-gilt-fund-direct-growth"
+      },
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+      "expect_body_contains": "0.48%",
+      "expect_footer_contains": "May 2026"
+    },
+    {
+      "id": "F02",
+      "query": "exit load for HSBC Midcap Fund direct growth",
+      "retrieval": {
+        "status": "found",
+        "query": "exit load for HSBC Midcap Fund direct growth",
+        "chunk_id": "hsbc-midcap-fund-direct-growth_c0001",
+        "chunk_text": "### Exit load, stamp duty and tax\n\nNil",
+        "citation_url": "https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth",
+        "section_title": "Exit load",
+        "effective_date": "2026-05-12T10:00:00+00:00",
+        "scheme": "hsbc-midcap-fund-direct-growth"
+      },
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth",
+      "expect_body_contains": "Nil"
+    },
+    {
+      "id": "F03",
+      "query": "minimum SIP amount HSBC Small Cap Fund",
+      "retrieval": {
+        "status": "found",
+        "query": "minimum SIP amount HSBC Small Cap Fund",
+        "chunk_id": "hsbc-small-cap-fund-direct-growth_c0000",
+        "chunk_text": "Min. for SIP ₹1,000 Min. for 1st investment ₹5,000",
+        "citation_url": "https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth",
+        "section_title": "Minimum investments",
+        "effective_date": "",
+        "scheme": "hsbc-small-cap-fund-direct-growth"
+      },
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth",
+      "expect_body_contains": "1,000",
+      "expect_footer_contains": "date unavailable"
+    },
+    {
+      "id": "F04",
+      "query": "benchmark index HSBC Multi Cap Fund",
+      "retrieval": {
+        "status": "found",
+        "query": "benchmark index HSBC Multi Cap Fund",
+        "chunk_id": "hsbc-multi-cap-fund-direct-growth_c0002",
+        "chunk_text": "Fund benchmark NIFTY 500 Multicap 50:25:25 Index",
+        "citation_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth",
+        "section_title": "About the fund",
+        "effective_date": "2026-05-10T08:00:00+00:00",
+        "scheme": "hsbc-multi-cap-fund-direct-growth"
+      },
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth",
+      "expect_body_contains": "NIFTY"
+    },
+    {
+      "id": "F05",
+      "query": "HSBC Focused Fund past performance chart",
+      "retrieval": {
+        "status": "found",
+        "query": "HSBC Focused Fund past performance chart",
+        "chunk_id": "hsbc-focused-fund-direct-growth_c0000",
+        "chunk_text": "Past performance data is available on the official Groww page. 3Y annualised +12.1%",
+        "citation_url": "https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth",
+        "section_title": "Returns",
+        "effective_date": "2026-05-11T12:00:00+00:00",
+        "scheme": "hsbc-focused-fund-direct-growth"
+      },
+      "performance_limited": true,
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth",
+      "expect_body_contains": "projection"
+    },
+    {
+      "id": "F06",
+      "query": "expense ratio HSBC Gilt Fund",
+      "retrieval": {
+        "status": "found",
+        "query": "expense ratio HSBC Gilt Fund",
+        "chunk_id": "hsbc-gilt-fund-direct-growth_c0000",
+        "chunk_text": "Expense ratio 0.48%",
+        "citation_url": "https://google.com",
+        "section_title": "Fund overview",
+        "effective_date": "2026-05-13T17:37:53.697902+00:00",
+        "scheme": "hsbc-gilt-fund-direct-growth"
+      },
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth"
+    }
+  ]
+}

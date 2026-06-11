@@ -1,0 +1,23 @@
+{
+  "phase": "4.1",
+  "phase_4_1_version": "4.1.0",
+  "generated_at_utc": "2026-05-19T14:47:05.276142+00:00",
+  "index_version": "idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "embedding_model_id": "hash-embedding-v1",
+  "vector_index_dir": "D:\\RAG Chatbot\\phases\\phase-3-chunking\\artifacts\\indexes\\vector\\idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "keyword_index_dir": "D:\\RAG Chatbot\\phases\\phase-3-indexing\\artifacts\\indexes\\keyword\\idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04",
+  "bm25_index_path": "D:\\RAG Chatbot\\phases\\phase-3-indexing\\artifacts\\indexes\\keyword\\idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04\\bm25_index.json",
+  "chunk_records_path": "D:\\RAG Chatbot\\phases\\phase-3-chunking\\artifacts\\indexes\\vector\\idx_20260519T081054Z_hash-embedding-v1_cfd5c65c4b04\\chunk_records.json",
+  "vector_chunk_count": 134,
+  "keyword_chunk_count": 134,
+  "bm25_document_count": 134,
+  "registry_entry_count": 16,
+  "ready_for_phase_4_2": true,
+  "errors": [],
+  "warnings": [],
+  "hybrid_merge_keys": [
+    "chunk_id",
+    "source_url",
+    "scheme"
+  ]
+}

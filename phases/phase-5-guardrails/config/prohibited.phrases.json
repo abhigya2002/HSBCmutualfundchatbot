@@ -1,0 +1,44 @@
+{
+  "$schema_comment": "Prohibited output patterns for Phase 5 validators (align Phase 0 / edge-cases/phase-5.md).",
+  "version": "1.0.0",
+  "advisory_patterns": [
+    "should i invest",
+    "should i buy",
+    "recommend",
+    "recommendation",
+    "best fund",
+    "good investment",
+    "you should",
+    "i suggest",
+    "suitable for you"
+  ],
+  "comparison_patterns": [
+    "which is better",
+    "better than",
+    "compare",
+    "versus",
+    " vs ",
+    "rank funds"
+  ],
+  "projection_patterns": [
+    "you will earn",
+    "you will get",
+    "guaranteed return",
+    "expected return",
+    "will make you",
+    "projected return"
+  ],
+  "injection_patterns": [
+    "ignore rules",
+    "ignore all rules",
+    "ignore instructions",
+    "system prompt",
+    "jailbreak",
+    "cite google.com"
+  ],
+  "regex_patterns": [
+    "\\bshould i\\b",
+    "\\bwhich is better\\b",
+    "\\byou will (?:earn|get|make)\\b"
+  ]
+}

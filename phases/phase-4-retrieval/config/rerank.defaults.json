@@ -1,0 +1,24 @@
+{
+  "$schema_comment": "Phase 4.5 re-ranking, thresholding, and citation selection.",
+  "version": "1.0.0",
+  "default_citation_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth",
+  "channel_weights": {
+    "vector": 0.45,
+    "keyword": 0.45
+  },
+  "signal_weights": {
+    "facet_match": 0.25,
+    "lexical_overlap": 0.15,
+    "scheme_match": 0.15
+  },
+  "min_final_score": 0.28,
+  "scheme_match_min_confidence": 0.82,
+  "tie_break": {
+    "order": ["final_score_desc", "effective_date_desc", "chunk_id_asc"],
+    "score_epsilon": 0.0001
+  },
+  "citation_policy": {
+    "precedence": "resolver_scheme_over_chunk_url",
+    "note": "P4-06: when resolver is confident, citation_url follows resolver; chunk supplies evidence text."
+  }
+}

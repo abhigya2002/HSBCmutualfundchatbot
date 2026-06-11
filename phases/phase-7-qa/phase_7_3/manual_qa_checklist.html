@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Manual QA Checklist</title>
+  <style>
+    :root {
+      --bg: #0f1117; --accent: #2563eb; --text: #ffffff;
+      --muted: #6b7280; --card: #1a1d27; --border: #2d3140;
+      --success: #22c55e;
+    }
+    body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); padding: 2rem; max-width: 900px; margin: 0 auto; }
+    h1 { margin-bottom: 0.5rem; }
+    .overall { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+    .bar { height: 8px; background: var(--border); border-radius: 4px; margin-top: 0.5rem; overflow: hidden; }
+    .bar-fill { height: 100%; background: var(--accent); width: 0%; transition: width 0.3s; }
+    section.qa-section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; margin-bottom: 1.25rem; }
+    .section-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+    h2 { font-size: 1rem; color: var(--accent); }
+    .section-progress { color: var(--muted); font-size: 0.85rem; }
+    .check-row { display: flex; gap: 0.75rem; padding: 0.5rem 0; border-bottom: 1px solid var(--border); cursor: pointer; }
+    .check-row:last-child { border-bottom: none; }
+    input[type=checkbox] { width: 18px; height: 18px; accent-color: var(--accent); flex-shrink: 0; margin-top: 2px; }
+    .btn { background: var(--accent); color: #fff; border: none; padding: 0.75rem 1.5rem; border-radius: 8px; font-size: 1rem; cursor: pointer; margin-top: 1rem; }
+    .btn:hover { opacity: 0.9; }
+    .signoff { display: none; margin-top: 1.5rem; padding: 1.25rem; background: var(--card); border: 2px solid var(--success); border-radius: 12px; }
+    .signoff.visible { display: block; }
+    .signoff input { background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 0.4rem 0.6rem; border-radius: 6px; margin-left: 0.5rem; }
+  </style>
+</head>
+<body>
+  <h1>Manual QA Checklist</h1>
+  <p style="color:var(--muted)">HSBC Mutual Fund Assistant — Phase 7.3</p>
+
+  <div class="overall">
+    <strong id="overall-label">Manual QA: 0/27 complete</strong>
+    <div class="bar"><div class="bar-fill" id="overall-bar"></div></div>
+  </div>
+
+  
+        <section class="qa-section" data-section="A">
+          <div class="section-head">
+            <h2>Section A — UI Elements</h2>
+            <span class="section-progress" id="progress-A">Section A: 0/8 complete</span>
+          </div>
+          <label class="check-row" data-section="A"><input type="checkbox" id="check-0" data-section="A" onchange="updateProgress()"/> <span>Welcome message is visible on first load</span></label>
+<label class="check-row" data-section="A"><input type="checkbox" id="check-1" data-section="A" onchange="updateProgress()"/> <span>3 sample question chips are visible</span></label>
+<label class="check-row" data-section="A"><input type="checkbox" id="check-2" data-section="A" onchange="updateProgress()"/> <span>Disclaimer &quot;Facts-only. No investment advice.&quot; is always visible</span></label>
+<label class="check-row" data-section="A"><input type="checkbox" id="check-3" data-section="A" onchange="updateProgress()"/> <span>Input box has correct placeholder text</span></label>
+<label class="check-row" data-section="A"><input type="checkbox" id="check-4" data-section="A" onchange="updateProgress()"/> <span>Send button is visible and has arrow icon</span></label>
+<label class="check-row" data-section="A"><input type="checkbox" id="check-5" data-section="A" onchange="updateProgress()"/> <span>Navbar shows &quot;HSBC Mutual Fund Assistant&quot;</span></label>
+<label class="check-row" data-section="A"><input type="checkbox" id="check-6" data-section="A" onchange="updateProgress()"/> <span>&quot;Live&quot; indicator with green pulsing dot visible</span></label>
+<label class="check-row" data-section="A"><input type="checkbox" id="check-7" data-section="A" onchange="updateProgress()"/> <span>&quot;Verified Accuracy&quot; badge visible in navbar</span></label>
+
+        </section>
+        
+        <section class="qa-section" data-section="B">
+          <div class="section-head">
+            <h2>Section B — Factual Answer Format</h2>
+            <span class="section-progress" id="progress-B">Section B: 0/6 complete</span>
+          </div>
+          <label class="check-row" data-section="B"><input type="checkbox" id="check-8" data-section="B" onchange="updateProgress()"/> <span>Answer is 3 sentences or fewer</span></label>
+<label class="check-row" data-section="B"><input type="checkbox" id="check-9" data-section="B" onchange="updateProgress()"/> <span>Exactly one citation link present</span></label>
+<label class="check-row" data-section="B"><input type="checkbox" id="check-10" data-section="B" onchange="updateProgress()"/> <span>Citation URL is one of the 16 allowlisted HSBC Groww URLs</span></label>
+<label class="check-row" data-section="B"><input type="checkbox" id="check-11" data-section="B" onchange="updateProgress()"/> <span>Citation URL matches the scheme being answered</span></label>
+<label class="check-row" data-section="B"><input type="checkbox" id="check-12" data-section="B" onchange="updateProgress()"/> <span>Footer shows &quot;Last updated from sources: &lt;date&gt;&quot;</span></label>
+<label class="check-row" data-section="B"><input type="checkbox" id="check-13" data-section="B" onchange="updateProgress()"/> <span>&quot;Facts Only&quot; green badge visible on answer card</span></label>
+
+        </section>
+        
+        <section class="qa-section" data-section="C">
+          <div class="section-head">
+            <h2>Section C — Refusal Behavior</h2>
+            <span class="section-progress" id="progress-C">Section C: 0/5 complete</span>
+          </div>
+          <label class="check-row" data-section="C"><input type="checkbox" id="check-14" data-section="C" onchange="updateProgress()"/> <span>Advisory query returns polite refusal</span></label>
+<label class="check-row" data-section="C"><input type="checkbox" id="check-15" data-section="C" onchange="updateProgress()"/> <span>Refusal shows &quot;Disclaimer&quot; amber badge</span></label>
+<label class="check-row" data-section="C"><input type="checkbox" id="check-16" data-section="C" onchange="updateProgress()"/> <span>Refusal still includes one allowlisted URL</span></label>
+<label class="check-row" data-section="C"><input type="checkbox" id="check-17" data-section="C" onchange="updateProgress()"/> <span>No investment advice in refusal text</span></label>
+<label class="check-row" data-section="C"><input type="checkbox" id="check-18" data-section="C" onchange="updateProgress()"/> <span>Refusal is 3 sentences or fewer</span></label>
+
+        </section>
+        
+        <section class="qa-section" data-section="D">
+          <div class="section-head">
+            <h2>Section D — Security and Compliance</h2>
+            <span class="section-progress" id="progress-D">Section D: 0/5 complete</span>
+          </div>
+          <label class="check-row" data-section="D"><input type="checkbox" id="check-19" data-section="D" onchange="updateProgress()"/> <span>PII query (PAN number) returns safe refusal</span></label>
+<label class="check-row" data-section="D"><input type="checkbox" id="check-20" data-section="D" onchange="updateProgress()"/> <span>No PII echoed back in any response</span></label>
+<label class="check-row" data-section="D"><input type="checkbox" id="check-21" data-section="D" onchange="updateProgress()"/> <span>Citation links open with rel=&quot;noopener noreferrer&quot;</span></label>
+<label class="check-row" data-section="D"><input type="checkbox" id="check-22" data-section="D" onchange="updateProgress()"/> <span>XSS input returns safe response</span></label>
+<label class="check-row" data-section="D"><input type="checkbox" id="check-23" data-section="D" onchange="updateProgress()"/> <span>No system prompt revealed on injection attempt</span></label>
+
+        </section>
+        
+        <section class="qa-section" data-section="E">
+          <div class="section-head">
+            <h2>Section E — Source Freshness</h2>
+            <span class="section-progress" id="progress-E">Section E: 0/3 complete</span>
+          </div>
+          <label class="check-row" data-section="E"><input type="checkbox" id="check-24" data-section="E" onchange="updateProgress()"/> <span>All 16 HSBC Groww URLs return HTTP 200</span></label>
+<label class="check-row" data-section="E"><input type="checkbox" id="check-25" data-section="E" onchange="updateProgress()"/> <span>Footer dates are within last 90 days</span></label>
+<label class="check-row" data-section="E"><input type="checkbox" id="check-26" data-section="E" onchange="updateProgress()"/> <span>No &quot;date unavailable&quot; in factual answers</span></label>
+
+        </section>
+        
+
+  <button class="btn" onclick="generateSignoff()">Generate Sign-off</button>
+  <div class="signoff" id="signoff">
+    <p id="signoff-text"></p>
+    <p>Reviewer: <input type="text" id="reviewer" placeholder="Your name"/></p>
+  </div>
+
+  <script>
+    const TOTAL = 27;
+    const sectionCounts = {'A': 8, 'B': 6, 'C': 5, 'D': 5, 'E': 3};
+
+    function updateProgress() {
+      let totalDone = 0;
+      for (const [sid, count] of Object.entries(sectionCounts)) {
+        const boxes = document.querySelectorAll(`input[data-section="${sid}"]`);
+        let done = 0;
+        boxes.forEach(b => { if (b.checked) done++; });
+        totalDone += done;
+        const el = document.getElementById('progress-' + sid);
+        if (el) el.textContent = `Section ${sid}: ${done}/${count} complete`;
+      }
+      document.getElementById('overall-label').textContent = `Manual QA: ${totalDone}/${TOTAL} complete`;
+      document.getElementById('overall-bar').style.width = (totalDone / TOTAL * 100) + '%';
+    }
+
+    function generateSignoff() {
+      const done = document.querySelectorAll('input[type=checkbox]:checked').length;
+      const today = '2026-06-11';
+      const ready = done === TOTAL ? 'YES' : 'NO';
+      const el = document.getElementById('signoff');
+      document.getElementById('signoff-text').innerHTML =
+        `<strong>Manual QA Complete — ${done}/${TOTAL} checks passed</strong><br/>` +
+        `Reviewer: ___________ &nbsp; Date: ${today}<br/>` +
+        `<strong>Ready for Go-Live: ${ready}</strong>`;
+      el.classList.add('visible');
+    }
+
+    updateProgress();
+  </script>
+</body>
+</html>

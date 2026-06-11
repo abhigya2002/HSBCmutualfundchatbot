@@ -1,0 +1,82 @@
+{
+  "phase": "6.1",
+  "phase_6_1_version": "6.1.0",
+  "generated_at_utc": "2026-06-06T11:29:43.396058+00:00",
+  "workspace_root": "D:\\RAG Chatbot\\phases\\phase-6-api-ui",
+  "handoff_path": "D:\\RAG Chatbot\\phases\\phase-5-guardrails\\artifacts\\service\\phase6_generation_handoff.json",
+  "handoff_phase": "5.6",
+  "phase_5_6_version": "5.6.0",
+  "chat_endpoint_path": "/chat",
+  "answer_envelope_fields": [
+    "outcome_type",
+    "query",
+    "session_id",
+    "retrieval_outcome_type",
+    "compliance_decision",
+    "compliance_reasons",
+    "validation_passed",
+    "validation_repaired",
+    "assistant",
+    "display_text",
+    "audit"
+  ],
+  "outcome_types": [
+    "refusal",
+    "factual",
+    "abstention"
+  ],
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8000,
+    "request_timeout_seconds": 30
+  },
+  "validation_limits": {
+    "max_request_body_bytes": 16384,
+    "max_query_length": 2000,
+    "max_session_id_length": 128,
+    "required_content_type": "application/json"
+  },
+  "cors": {
+    "dev_origins": [
+      "http://localhost:3000",
+      "http://127.0.0.1:8000",
+      "http://localhost:8000"
+    ],
+    "prod_origins": []
+  },
+  "logging": {
+    "level": "INFO",
+    "redact_pii": true,
+    "redact_field_names": [
+      "pan",
+      "aadhaar",
+      "account_number",
+      "otp",
+      "email",
+      "phone"
+    ]
+  },
+  "generation_service": {
+    "class": "phase_5_6.service.GenerationService",
+    "guardrails_root": "D:\\RAG Chatbot\\phases\\phase-5-guardrails",
+    "instantiated": true,
+    "error": ""
+  },
+  "groq_env": {
+    "dotenv_path": "D:\\RAG Chatbot\\.env",
+    "dotenv_found": true,
+    "use_groq": "true",
+    "api_key_configured": true,
+    "groq_composer_enabled": true,
+    "note": "Delegated to phase_5_4.env_config.groq_composer_enabled()"
+  },
+  "evaluation_summary": {
+    "passed": true,
+    "compliance_pass_rate": 1.0,
+    "redteam_pass_rate": 1.0,
+    "allowlist_violation_count": 0
+  },
+  "ready_for_phase_6_2": true,
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,199 @@
+{
+  "manifest_version": "2.6.0",
+  "generated_at_utc": "2026-05-14T11:40:54.871415+00:00",
+  "entry_count": 16,
+  "entries": [
+    {
+      "scheme": "hsbc-india-opportunities-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-india-opportunities-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-india-opportunities-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-india-opportunities-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-india-opportunities-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-india-opportunities-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-midcap-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-midcap-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-midcap-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-midcap-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-midcap-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-small-cap-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-small-cap-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-small-cap-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-small-cap-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-small-cap-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-multi-cap-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-multi-cap-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-multi-cap-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-multi-cap-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-multi-cap-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-value-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-value-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-value-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-value-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-value-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-value-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-large-and-mid-cap-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-large-and-mid-cap-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-large-and-mid-cap-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-large-and-mid-cap-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-large-and-mid-cap-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-large-and-mid-cap-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-equity-savings-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-equity-savings-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-equity-savings-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-equity-savings-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-equity-savings-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-equity-savings-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-infrastructure-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-infrastructure-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-infrastructure-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-infrastructure-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-infrastructure-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-infrastructure-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-multi-asset-allocation-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-multi-asset-allocation-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-multi-asset-allocation-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-multi-asset-allocation-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-multi-asset-allocation-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-multi-asset-allocation-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-focused-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-focused-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-focused-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-focused-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-focused-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-gold-etf-fof-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-gold-etf-fof-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-gold-etf-fof-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-gold-etf-fof-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-gold-etf-fof-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-gold-etf-fof-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-india-export-opportunities-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-india-export-opportunities-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-india-export-opportunities-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-india-export-opportunities-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-india-export-opportunities-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-india-export-opportunities-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-consumption-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-consumption-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-consumption-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-consumption-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-consumption-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-consumption-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-medium-duration-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-medium-duration-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-medium-duration-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-medium-duration-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-medium-duration-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-medium-duration-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-dynamic-bond-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-dynamic-bond-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-dynamic-bond-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-dynamic-bond-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-dynamic-bond-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-dynamic-bond-fund-direct-growth.json"
+      }
+    },
+    {
+      "scheme": "hsbc-gilt-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+      "parse_success": true,
+      "quarantined": false,
+      "paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-gilt-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-gilt-fund-direct-growth.md",
+        "clean_document": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-gilt-fund-direct-growth.clean.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-gilt-fund-direct-growth.json"
+      }
+    }
+  ]
+}

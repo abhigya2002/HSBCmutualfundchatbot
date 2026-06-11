@@ -1,0 +1,52 @@
+{
+  "phase": "7.3",
+  "run_timestamp": "2026-06-11T13:04:05.406817+00:00",
+  "phase_7_2_score": "64/65 (98%)",
+  "phase_6_6_score": "20/20 (100%)",
+  "source_freshness": "16/16 URLs reachable",
+  "average_latency_ms": 3813,
+  "auto_checks_passed": true,
+  "go_live_verdict": "READY FOR DEPLOYMENT",
+  "dashboard_path": "phase_7_3/dashboard.html",
+  "manual_qa_path": "phase_7_3/manual_qa_checklist.html",
+  "go_live_path": "phase_7_3/go_live_checklist.html",
+  "auto_checks": [
+    {
+      "label": "Phase 7.2 overall score \u2265 95%",
+      "passed": true,
+      "detail": "98%"
+    },
+    {
+      "label": "Phase 6.6 E2E score \u2265 90%",
+      "passed": true,
+      "detail": "100%"
+    },
+    {
+      "label": "All 16 source URLs reachable",
+      "passed": true,
+      "detail": "16/16 URLs reachable"
+    },
+    {
+      "label": "/health returns ok",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "label": "/ready returns ok",
+      "passed": true,
+      "detail": "ready=True"
+    },
+    {
+      "label": "No allowlist violations in test runs",
+      "passed": true,
+      "detail": "clean"
+    },
+    {
+      "label": "Average latency < 10000ms",
+      "passed": true,
+      "detail": "3553 ms (5 samples)"
+    }
+  ],
+  "health_ok": true,
+  "ready_ok": true
+}

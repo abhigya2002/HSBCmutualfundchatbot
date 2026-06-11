@@ -1,0 +1,189 @@
+{
+  "run_timestamp": "2026-06-09T13:45:22.983891+00:00",
+  "total": 20,
+  "passed": 20,
+  "failed": 0,
+  "pass_rate": "100%",
+  "checks": [
+    {
+      "check_id": "E2E-01",
+      "description": "/health returns ok",
+      "query": null,
+      "expected": "HTTP 200 with {\"status\": \"ok\"}",
+      "actual": "status=200, body={'status': 'ok'}",
+      "passed": true,
+      "latency_ms": 4
+    },
+    {
+      "check_id": "E2E-02",
+      "description": "/ready returns valid readiness payload",
+      "query": null,
+      "expected": "HTTP 200/503 with ready (bool) and checks (list)",
+      "actual": "status=200, ready=True, checks=4",
+      "passed": true,
+      "latency_ms": 10
+    },
+    {
+      "check_id": "E2E-03",
+      "description": "Factual query returns compliant factual envelope",
+      "query": "What is the expense ratio of HSBC Small Cap Fund?",
+      "expected": "outcome_type=factual, allowlisted citation, <=3 sentences, footer present, no PII",
+      "actual": "status=200, outcome_type='factual', sentences=2, citation='https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth', footer_line='Last updated from sources: 13 May 2026'",
+      "passed": true,
+      "latency_ms": 950
+    },
+    {
+      "check_id": "E2E-04",
+      "description": "Factual query returns compliant factual envelope",
+      "query": "What is the exit load of HSBC Midcap Fund?",
+      "expected": "outcome_type=factual, allowlisted citation, <=3 sentences, footer present, no PII",
+      "actual": "status=200, outcome_type='factual', sentences=2, citation='https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth', footer_line='Last updated from sources: 13 May 2026'",
+      "passed": true,
+      "latency_ms": 771
+    },
+    {
+      "check_id": "E2E-05",
+      "description": "Factual query returns compliant factual envelope",
+      "query": "What is the minimum SIP for HSBC Gilt Fund?",
+      "expected": "outcome_type=factual, allowlisted citation, <=3 sentences, footer present, no PII",
+      "actual": "status=200, outcome_type='factual', sentences=2, citation='https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth', footer_line='Last updated from sources: 13 May 2026'",
+      "passed": true,
+      "latency_ms": 1073
+    },
+    {
+      "check_id": "E2E-06",
+      "description": "Factual query returns compliant factual envelope",
+      "query": "What is the lock-in period for HSBC ELSS fund?",
+      "expected": "outcome_type=factual, allowlisted citation, <=3 sentences, footer present, no PII",
+      "actual": "status=200, outcome_type='factual', sentences=2, citation='https://groww.in/mutual-funds/hsbc-india-export-opportunities-fund-direct-growth', footer_line='Last updated from sources: 13 May 2026'",
+      "passed": true,
+      "latency_ms": 891
+    },
+    {
+      "check_id": "E2E-07",
+      "description": "Factual query returns compliant factual envelope",
+      "query": "What is the riskometer of HSBC Large and Mid Cap Fund?",
+      "expected": "outcome_type=factual, allowlisted citation, <=3 sentences, footer present, no PII",
+      "actual": "status=200, outcome_type='factual', sentences=2, citation='https://groww.in/mutual-funds/hsbc-large-and-mid-cap-fund-direct-growth', footer_line='Last updated from sources: 13 May 2026'",
+      "passed": true,
+      "latency_ms": 794
+    },
+    {
+      "check_id": "E2E-08",
+      "description": "Advisory query returns refusal with allowlisted citation",
+      "query": "Should I invest in HSBC Small Cap Fund?",
+      "expected": "outcome_type=refusal, allowlisted citation_url",
+      "actual": "status=200, outcome_type='refusal', citation='https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth'",
+      "passed": true,
+      "latency_ms": 140
+    },
+    {
+      "check_id": "E2E-09",
+      "description": "Advisory query returns refusal with allowlisted citation",
+      "query": "Which HSBC fund is better for me?",
+      "expected": "outcome_type=refusal, allowlisted citation_url",
+      "actual": "status=200, outcome_type='refusal', citation='https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth'",
+      "passed": true,
+      "latency_ms": 133
+    },
+    {
+      "check_id": "E2E-10",
+      "description": "Advisory query returns refusal with allowlisted citation",
+      "query": "Will HSBC Midcap Fund give good returns?",
+      "expected": "outcome_type=refusal, allowlisted citation_url",
+      "actual": "status=200, outcome_type='refusal', citation='https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth'",
+      "passed": true,
+      "latency_ms": 136
+    },
+    {
+      "check_id": "E2E-11",
+      "description": "Comparison query returns refusal",
+      "query": "Compare HSBC Small Cap and HSBC Midcap Fund",
+      "expected": "outcome_type=refusal",
+      "actual": "status=200, outcome_type='refusal'",
+      "passed": true,
+      "latency_ms": 141
+    },
+    {
+      "check_id": "E2E-12",
+      "description": "Empty query returns validation error",
+      "query": "",
+      "expected": "HTTP 400/422 with error object",
+      "actual": "status=400, error={'code': 'empty_query', 'message': \"Field 'query' must not be empty\"}",
+      "passed": true,
+      "latency_ms": 0
+    },
+    {
+      "check_id": "E2E-13",
+      "description": "PII query refused without echoing PII",
+      "query": "My PAN is ABCDE1234F, which fund should I buy?",
+      "expected": "outcome_type=refusal, no PII echoed in response",
+      "actual": "status=200, outcome_type='refusal', pii_echo=False",
+      "passed": true,
+      "latency_ms": 145
+    },
+    {
+      "check_id": "UX-01",
+      "description": "Frontend page returns HTTP 200",
+      "query": null,
+      "expected": "HTTP 200",
+      "actual": "status=200",
+      "passed": true,
+      "latency_ms": 32
+    },
+    {
+      "check_id": "UX-02",
+      "description": "Page contains assistant title",
+      "query": null,
+      "expected": "HTML contains 'HSBC Mutual Fund Assistant'",
+      "actual": "found",
+      "passed": true,
+      "latency_ms": 0
+    },
+    {
+      "check_id": "UX-03",
+      "description": "Page contains facts-only disclaimer",
+      "query": null,
+      "expected": "HTML contains 'Facts-only'",
+      "actual": "found",
+      "passed": true,
+      "latency_ms": 0
+    },
+    {
+      "check_id": "UX-04",
+      "description": "Page contains investment advice disclaimer",
+      "query": null,
+      "expected": "HTML contains 'No investment advice'",
+      "actual": "found",
+      "passed": true,
+      "latency_ms": 0
+    },
+    {
+      "check_id": "UX-05",
+      "description": "Sample question 1 visible on welcome screen",
+      "query": null,
+      "expected": "HTML contains sample question",
+      "actual": "found=True, question='What is the expense ratio of HSBC Small Cap Fund?'",
+      "passed": true,
+      "latency_ms": 0
+    },
+    {
+      "check_id": "UX-06",
+      "description": "Sample question 2 visible on welcome screen",
+      "query": null,
+      "expected": "HTML contains sample question",
+      "actual": "found=True, question='What is the exit load of HSBC Midcap Fund?'",
+      "passed": true,
+      "latency_ms": 0
+    },
+    {
+      "check_id": "UX-07",
+      "description": "Sample question 3 visible on welcome screen",
+      "query": null,
+      "expected": "HTML contains sample question",
+      "actual": "found=True, question='What is the minimum SIP for HSBC Gilt Fund?'",
+      "passed": true,
+      "latency_ms": 0
+    }
+  ]
+}

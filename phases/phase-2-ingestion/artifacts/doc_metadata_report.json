@@ -1,0 +1,869 @@
+{
+  "phase": "2.5",
+  "generated_at_utc": "2026-05-14T11:32:40.166763+00:00",
+  "metadata_builder_version": "2.5.0",
+  "entry_count": 16,
+  "missing_clean_count": 0,
+  "entries": [
+    {
+      "scheme": "hsbc-india-opportunities-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-india-opportunities-fund-direct-growth",
+      "content_sha256": "dda047552ecd5161bb4071ba729b660ca16f1db94872e1ef5362af3b1d0ca9f8",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:42.425840+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-india-opportunities-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-india-opportunities-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-india-opportunities-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-india-opportunities-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-india-opportunities-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": ". for SIP\u20b9500Fund size (AUM)\u20b95,405.12 CrExpense ratio1.36%Rating4### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "1.36%"
+        },
+        "exit_load": {
+          "snippet": "Exit load for units in excess of 10% of the investment,1% will be charged for redemption within 1 year.14 Mar 2018Exit load of 1% if redeemed within 1 year01 Mar 2013--0",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "Y3Y5YAllNAV: 12 May '26\u20b9243.03Min. for SIP\u20b9500Fund size (AUM)\u20b95,405.12 CrExp",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Very High risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Very High risk"
+        },
+        "benchmark": {
+          "snippet": "quity market tanks.;Fund benchmarkNIFTY 500 Total Return IndexScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY 500 Total Return Index"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 1,
+        "scheme": "hsbc-india-opportunities-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-midcap-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth",
+      "content_sha256": "b85f5f00f020231068b6e91348fbb69a0ffbfbc15d736f36fb3baa88fe733d52",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:43.122651+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-midcap-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-midcap-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-midcap-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-midcap-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-midcap-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": "for SIP\u20b9500Fund size (AUM)\u20b913,386.58 CrExpense ratio1.62%Rating3### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "1.62%"
+        },
+        "exit_load": {
+          "snippet": "Exit load for units in excess of 10% of the investment, 1% will be charged for redemption within 1 year.01 Jan 2013Exit load of 1% if redeemed within 1 year.",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "Y3Y5YAllNAV: 12 May '26\u20b9482.33Min. for SIP\u20b9500Fund size (AUM)\u20b913,386.58 CrEx",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Very High risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Very High risk"
+        },
+        "benchmark": {
+          "snippet": "at Midcap 100 Index.Fund benchmarkNIFTY Midcap 150 Total Return IndexScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY Midcap 150 Total Return Index"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 2,
+        "scheme": "hsbc-midcap-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-small-cap-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth",
+      "content_sha256": "cdd65dbac1cf39a930ae2f3dae3bfbce04ce22325dde8b3d63225e989509b429",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:44.056667+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-small-cap-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-small-cap-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-small-cap-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-small-cap-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-small-cap-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": "for SIP\u20b9500Fund size (AUM)\u20b916,393.56 CrExpense ratio0.67%Rating3### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "0.67%"
+        },
+        "exit_load": {
+          "snippet": "Exit load for units in excess of 10% of the investment,1% will be charged for redemption within 1 year.15 Jun 2016Exit load of 1% if redeemed within 1 year22 Apr 2014--",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "1Y3Y5YAllNAV: 12 May '26\u20b990.26Min. for SIP\u20b9500Fund size (AUM)\u20b916,393.56 CrEx",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Very High risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Very High risk"
+        },
+        "benchmark": {
+          "snippet": "apital appreciation.Fund benchmarkNIFTY Smallcap 250 Total Return IndexScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY Smallcap 250 Total Return Index"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 3,
+        "scheme": "hsbc-small-cap-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-multi-cap-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth",
+      "content_sha256": "ee24844de04614b69a4ff73f7f20330120f853f9d7e8ed69d6d71d7fb43cdae2",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:44.789432+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-multi-cap-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-multi-cap-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-multi-cap-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-multi-cap-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-multi-cap-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": ". for SIP\u20b9500Fund size (AUM)\u20b95,500.08 CrExpense ratio0.72%Rating5### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "0.72%"
+        },
+        "exit_load": {
+          "snippet": "Exit Load for units in excess of 10% of the investment,1% will be charged for redemption within 1 year.10 Jan 2023Exit Load for units in excess of 10% of the investment,",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "6M1Y3YAllNAV: 12 May '26\u20b919.47Min. for SIP\u20b9500Fund size (AUM)\u20b95,500.08 CrExp",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Very High risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Very High risk"
+        },
+        "benchmark": {
+          "snippet": "rket capitalization.Fund benchmarkNifty 500 Multicap 50:25:25 Total Return IndexScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "Nifty 500 Multicap 50:25:25 Total Return Index"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 4,
+        "scheme": "hsbc-multi-cap-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-value-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-value-fund-direct-growth",
+      "content_sha256": "b2dc8747a4f827c721e01b9f440430c6efd9e258039d710936c13ee7b35a2290",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:45.522807+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-value-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-value-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-value-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-value-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-value-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": "for SIP\u20b9500Fund size (AUM)\u20b914,872.62 CrExpense ratio0.74%Rating4### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "0.74%"
+        },
+        "exit_load": {
+          "snippet": "Exit load for units in excess of 10% of the investment,1% will be charged for redemption within 1 year.01 Jun 2015Exit load of 1% if redeemed within 1 year01 Jan 2015Exi",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "Y3Y5YAllNAV: 12 May '26\u20b9123.86Min. for SIP\u20b9500Fund size (AUM)\u20b914,872.62 CrEx",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Very High risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Very High risk"
+        },
+        "benchmark": {
+          "snippet": "ternational markets.Fund benchmarkNIFTY 500 Total Return IndexScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY 500 Total Return Index"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 5,
+        "scheme": "hsbc-value-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-large-and-mid-cap-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-large-and-mid-cap-fund-direct-growth",
+      "content_sha256": "a53bb3cca7e601b8dadf3f49f93e43d252fb454a12064afc13506a4c0eaed2b7",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:46.267730+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-large-and-mid-cap-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-large-and-mid-cap-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-large-and-mid-cap-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-large-and-mid-cap-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-large-and-mid-cap-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": ". for SIP\u20b9500Fund size (AUM)\u20b94,877.42 CrExpense ratio2.37%Rating3### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "2.37%"
+        },
+        "exit_load": {
+          "snippet": "Exit load for units in excess of 10% of the investment,1% will be charged for redemption within 1 year.11 Mar 2019Exit load of 1% if redeemed within 1 year.",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "1Y3Y5YAllNAV: 12 May '26\u20b930.37Min. for SIP\u20b9500Fund size (AUM)\u20b94,877.42 CrExp",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Very High risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Very High risk"
+        },
+        "benchmark": {
+          "snippet": "and mid cap stocks.Fund benchmarkNIFTY Large Midcap 250 Total Return IndexScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY Large Midcap 250 Total Return Index"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 6,
+        "scheme": "hsbc-large-and-mid-cap-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-equity-savings-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-equity-savings-fund-direct-growth",
+      "content_sha256": "9ffd778268b8a190339e657dc04e69016fc55922726ee04eaebc314d45fd4ed6",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:47.322701+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-equity-savings-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-equity-savings-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-equity-savings-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-equity-savings-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-equity-savings-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": "in. for SIP\u20b9500Fund size (AUM)\u20b9904.50 CrExpense ratio0.73%Rating4### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "0.73%"
+        },
+        "exit_load": {
+          "snippet": "Exit load for units in excess of 0.50% of the investment,1% will be charged for redemption within 1 month.11 Aug 2016Exit load of 1% if units in excess of 10% are redeem",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "1Y3Y5YAllNAV: 12 May '26\u20b939.63Min. for SIP\u20b9500Fund size (AUM)\u20b9904.50 CrExpen",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": null,
+        "benchmark": {
+          "snippet": "elated instruments.;Fund benchmarkNIFTY Equity Savings Total Return IndexScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY Equity Savings Total Return Index"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 7,
+        "scheme": "hsbc-equity-savings-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-infrastructure-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-infrastructure-fund-direct-growth",
+      "content_sha256": "3383a77ca03eb9df73f3f82933e55b0456e2cc7fda8db0983b5d3aae662d6bd1",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:48.013277+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-infrastructure-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-infrastructure-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-infrastructure-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-infrastructure-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-infrastructure-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": ". for SIP\u20b9500Fund size (AUM)\u20b92,412.93 CrExpense ratio0.99%Rating3### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "0.99%"
+        },
+        "exit_load": {
+          "snippet": "Exit load for units in excess of 10% of the investment, 1% will be charged for redemption within 90 days.01 Apr 2019Exit load for units in excess of 10% of the investmen",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "1Y3Y5YAllNAV: 12 May '26\u20b954.90Min. for SIP\u20b9500Fund size (AUM)\u20b92,412.93 CrExp",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Very High risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Very High risk"
+        },
+        "benchmark": {
+          "snippet": "growth in long run.Fund benchmarkNIFTY Infrastructure Total Return IndexScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY Infrastructure Total Return Index"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 8,
+        "scheme": "hsbc-infrastructure-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-multi-asset-allocation-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-multi-asset-allocation-fund-direct-growth",
+      "content_sha256": "f122d134e5cdf7c6b21d0876a0e45786cee2ef70ed7dcbc645f7c74ac316c027",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:48.795389+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-multi-asset-allocation-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-multi-asset-allocation-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-multi-asset-allocation-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-multi-asset-allocation-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-multi-asset-allocation-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": ". for SIP\u20b9500Fund size (AUM)\u20b92,844.33 CrExpense ratio0.93%Rating--### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "0.93%"
+        },
+        "exit_load": {
+          "snippet": "Exit Load for units in excess of 10% of the investment,1% will be charged for redemption within 1 year.",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "1M6M1YAllNAV: 12 May '26\u20b913.78Min. for SIP\u20b9500Fund size (AUM)\u20b92,844.33 CrExp",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Very High risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Very High risk"
+        },
+        "benchmark": {
+          "snippet": "Gold / Silver ETFs.Fund benchmark--Scheme Information Document(SID)### Fund house HSBC Mutual FundRank (",
+          "pattern": "benchmark_v1",
+          "value_text": "--Scheme Information Document(SID)"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 9,
+        "scheme": "hsbc-multi-asset-allocation-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-focused-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth",
+      "content_sha256": "5a593db53d0b752b8c82d6d4c48f56a3db3cb48f0a2d3506a510d2cd17e3bb7a",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:49.522781+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-focused-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-focused-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-focused-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-focused-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-focused-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": ". for SIP\u20b9500Fund size (AUM)\u20b91,678.47 CrExpense ratio0.93%Rating3### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "0.93%"
+        },
+        "exit_load": {
+          "snippet": "Exit load for units in excess of 10% of the investment,1% will be charged for redemption within 1 year.01 Jul 2020Exit load of 1% if redeemed wihtin 1 year.",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "1Y3Y5YAllNAV: 12 May '26\u20b927.16Min. for SIP\u20b9500Fund size (AUM)\u20b91,678.47 CrExp",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Very High risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Very High risk"
+        },
+        "benchmark": {
+          "snippet": "rket capitalization.Fund benchmarkNIFTY 500 Total Return IndexScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY 500 Total Return Index"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 10,
+        "scheme": "hsbc-focused-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-gold-etf-fof-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-gold-etf-fof-direct-growth",
+      "content_sha256": "cf225d3ab32ef9bb83839a4b3863df60e3c8ed53d79336282a98febc46e84128",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:50.116131+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-gold-etf-fof-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-gold-etf-fof-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-gold-etf-fof-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-gold-etf-fof-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-gold-etf-fof-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": "in. for SIP\u20b9500Fund size (AUM)\u20b9374.19 CrExpense ratio0.05%Rating--## Holdings ( 1 ) | HSBC Gold",
+          "pattern": "expense_ratio_v1",
+          "value_text": "0.05%"
+        },
+        "exit_load": {
+          "snippet": "Exit load of 1%, if redeemed within 15 days.",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "1MAllNAV: 12 May '26\u20b910.33Min. for SIP\u20b9500Fund size (AUM)\u20b9374.19 CrExpen",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated High risk",
+          "pattern": "risk_label_v1",
+          "value_text": "High risk"
+        },
+        "benchmark": {
+          "snippet": "ed by HSBC Gold ETF.Fund benchmarkDomestic Price of GoldScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "Domestic Price of Gold"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 11,
+        "scheme": "hsbc-gold-etf-fof-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-india-export-opportunities-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-india-export-opportunities-fund-direct-growth",
+      "content_sha256": "585d5e43a1813a86639612804b07f1aa6e9ad91cd5fe2fe3b462adb5426d7657",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:50.789142+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-india-export-opportunities-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-india-export-opportunities-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-india-export-opportunities-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-india-export-opportunities-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-india-export-opportunities-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": ". for SIP\u20b9500Fund size (AUM)\u20b91,176.20 CrExpense ratio3.04%Rating--### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "3.04%"
+        },
+        "exit_load": {
+          "snippet": "Exit Load for units in excess of 10% of the investment,1% will be charged for redemption within 1 year.",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "1M6M1YAllNAV: 12 May '26\u20b910.16Min. for SIP\u20b9500Fund size (AUM)\u20b91,176.20 CrExp",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Very High risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Very High risk"
+        },
+        "benchmark": {
+          "snippet": "rantee any returns.;Fund benchmarkNIFTY 500 Total Return IndexScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY 500 Total Return Index"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 12,
+        "scheme": "hsbc-india-export-opportunities-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-consumption-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-consumption-fund-direct-growth",
+      "content_sha256": "41e46c5a9836f79ae66fc2c31e8cc5d8cb19e58bba518760b9faa0ecb472b5fa",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:51.444587+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-consumption-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-consumption-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-consumption-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-consumption-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-consumption-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": ". for SIP\u20b9500Fund size (AUM)\u20b91,691.60 CrExpense ratio0.77%Rating--### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "0.77%"
+        },
+        "exit_load": {
+          "snippet": "Exit Load for units in excess of 10% of the investment,1% will be charged for redemption within 90 days.10 Aug 2023Exit Load for units in excess of 10% of the investment",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "1M6M1YAllNAV: 12 May '26\u20b914.31Min. for SIP\u20b9500Fund size (AUM)\u20b91,691.60 CrExp",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b9500"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Very High risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Very High risk"
+        },
+        "benchmark": {
+          "snippet": "related activities.Fund benchmarkNIFTY India Consumption Total Return IndexScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY India Consumption Total Return Index"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 13,
+        "scheme": "hsbc-consumption-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-medium-duration-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-medium-duration-fund-direct-growth",
+      "content_sha256": "2df10e1499aad18ef1f02802926e530338e8f0bac9be307a89be59722f75c0f0",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:52.099517+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-medium-duration-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-medium-duration-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-medium-duration-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-medium-duration-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-medium-duration-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": ". for SIP\u20b91,000Fund size (AUM)\u20b9732.30 CrExpense ratio0.41%Rating1### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "0.41%"
+        },
+        "exit_load": {
+          "snippet": "Exit load of 1% if redeemed within 90 Days. 09 Dec 2019Exit load of 1%, if redeemed within 1 year.20 Nov 2015Exit load of 2% if redeemed within 1 year and 1% if redeemed",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "1Y3Y5YAllNAV: 12 May '26\u20b923.32Min. for SIP\u20b91,000Fund size (AUM)\u20b9732.30 CrExpen",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b91,000"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Moderate risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Moderate risk"
+        },
+        "benchmark": {
+          "snippet": "y market securities.Fund benchmarkNIFTY Medium Duration Debt Index A-IIIScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY Medium Duration Debt Index A-III"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 14,
+        "scheme": "hsbc-medium-duration-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-dynamic-bond-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-dynamic-bond-fund-direct-growth",
+      "content_sha256": "2c5fd6f5875786d5f296a40e51029b3f1b9720463045d20c204770ef3d1745f0",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:52.758933+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-dynamic-bond-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-dynamic-bond-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-dynamic-bond-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-dynamic-bond-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-dynamic-bond-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": ". for SIP\u20b91,000Fund size (AUM)\u20b9126.66 CrExpense ratio0.30%Rating3### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "0.30%"
+        },
+        "exit_load": {
+          "snippet": "Exit load of 0.50% if redeemed within 1 year01 Jan 2013Exit load of 0.50% shall be charged if units are redeemed within 6 months from the date of allotment.",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "1Y3Y5YAllNAV: 12 May '26\u20b932.66Min. for SIP\u20b91,000Fund size (AUM)\u20b9126.66 CrExpen",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b91,000"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Moderate risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Moderate risk"
+        },
+        "benchmark": {
+          "snippet": "market instruments.Fund benchmarkNIFTY Composite Debt Index A-IIIScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY Composite Debt Index A-III"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 15,
+        "scheme": "hsbc-dynamic-bond-fund-direct-growth"
+      }
+    },
+    {
+      "scheme": "hsbc-gilt-fund-direct-growth",
+      "source_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+      "content_sha256": "94d5f3d4f86de33bde766a7eb1523b3ffe4bbef1eed50151fc146ecbfbd6897e",
+      "parser_version": "2.3.0",
+      "fetched_at": "2026-05-13T17:37:53.697902+00:00",
+      "extract_status": "ok",
+      "normalizer_version": "2.4.0",
+      "normalize_status": "ok",
+      "metadata_builder_version": "2.5.0",
+      "candidates_note": "Best-effort regex on normalized Markdown; not QA-verified facts.",
+      "artifact_paths": {
+        "raw_html": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\raw\\hsbc-gilt-fund-direct-growth.html",
+        "clean_markdown": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-gilt-fund-direct-growth.md",
+        "extract_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\extracted\\hsbc-gilt-fund-direct-growth.extract.json",
+        "normalize_sidecar": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\clean\\hsbc-gilt-fund-direct-growth.normalize.json",
+        "doc_metadata": "D:\\RAG Chatbot\\phases\\phase-2-ingestion\\artifacts\\metadata\\hsbc-gilt-fund-direct-growth.json"
+      },
+      "candidates": {
+        "expense_ratio": {
+          "snippet": ". for SIP\u20b91,000Fund size (AUM)\u20b9177.37 CrExpense ratio0.48%Rating2### Return calculator Monthly",
+          "pattern": "expense_ratio_v1",
+          "value_text": "0.48%"
+        },
+        "exit_load": {
+          "snippet": "Exit load, stamp duty and tax",
+          "pattern": "exit_load_v1"
+        },
+        "min_sip": {
+          "snippet": "1Y3Y5YAllNAV: 12 May '26\u20b975.36Min. for SIP\u20b91,000Fund size (AUM)\u20b9177.37 CrExpen",
+          "pattern": "min_sip_v1",
+          "value_text": "\u20b91,000"
+        },
+        "lock_in": null,
+        "riskometer": {
+          "snippet": "rated Moderate risk",
+          "pattern": "risk_label_v1",
+          "value_text": "Moderate risk"
+        },
+        "benchmark": {
+          "snippet": "exceeding 12 years.Fund benchmarkNIFTY All Duration G-Sec IndexScheme Information Document(SID)### Fund",
+          "pattern": "benchmark_v1",
+          "value_text": "NIFTY All Duration G-Sec Index"
+        },
+        "statement_tax": {
+          "snippet": "Tax implication",
+          "pattern": "tax_implication_v1"
+        }
+      },
+      "registry": {
+        "id": 16,
+        "scheme": "hsbc-gilt-fund-direct-growth"
+      }
+    }
+  ]
+}

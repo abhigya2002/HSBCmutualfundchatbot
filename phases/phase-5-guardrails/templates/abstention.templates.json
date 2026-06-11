@@ -1,0 +1,7 @@
+{
+  "$schema_comment": "Abstention copy when Phase 5.2 abstains on weak/missing evidence.",
+  "version": "1.0.0",
+  "template": {
+    "body": "I could not find enough evidence in our official HSBC sources to answer that question."
+  }
+}

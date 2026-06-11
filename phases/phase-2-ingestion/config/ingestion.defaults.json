@@ -1,0 +1,21 @@
+{
+  "$schema_comment": "Phase 2.1 — ingestion workspace defaults (no network fetch in dry mode).",
+  "artifact_root": "artifacts",
+  "directories": {
+    "raw": "raw",
+    "clean": "clean",
+    "metadata": "metadata",
+    "extracted": "extracted"
+  },
+  "http": {
+    "timeout_seconds": 20.0,
+    "max_retries": 3,
+    "backoff_base_seconds": 1.0,
+    "max_body_bytes": 16777216
+  },
+  "user_agent": "RAG-Corpus-Ingestion/1.0 (+internal; HSBC-Groww-allowlist-only)",
+  "logging": {
+    "level": "INFO",
+    "redact_pii": true
+  }
+}

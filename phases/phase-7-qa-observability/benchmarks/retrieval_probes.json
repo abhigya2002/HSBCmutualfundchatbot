@@ -1,0 +1,66 @@
+{
+  "probe_version": "1.0.0",
+  "description": "Labeled factual queries for Phase 7.1 retrieval hit quality (live /chat).",
+  "probes": [
+    {
+      "id": "R01",
+      "query": "What is the expense ratio of HSBC Small Cap Fund?",
+      "expected_scheme_slug": "hsbc-small-cap-fund-direct-growth",
+      "expected_facet": "A1"
+    },
+    {
+      "id": "R02",
+      "query": "What is the exit load of HSBC Midcap Fund?",
+      "expected_scheme_slug": "hsbc-midcap-fund-direct-growth",
+      "expected_facet": "A2"
+    },
+    {
+      "id": "R03",
+      "query": "What is the minimum SIP for HSBC Gilt Fund?",
+      "expected_scheme_slug": "hsbc-gilt-fund-direct-growth",
+      "expected_facet": "A3"
+    },
+    {
+      "id": "R04",
+      "query": "What is the riskometer of HSBC Large and Mid Cap Fund?",
+      "expected_scheme_slug": "hsbc-large-and-mid-cap-fund-direct-growth",
+      "expected_facet": "A5"
+    },
+    {
+      "id": "R05",
+      "query": "What is the benchmark of HSBC Multi Cap Fund?",
+      "expected_scheme_slug": "hsbc-multi-cap-fund-direct-growth",
+      "expected_facet": "A6"
+    },
+    {
+      "id": "R06",
+      "query": "What is the expense ratio of HSBC Value Fund?",
+      "expected_scheme_slug": "hsbc-value-fund-direct-growth",
+      "expected_facet": "A1"
+    },
+    {
+      "id": "R07",
+      "query": "exit load HSBC Dynamic Bond Fund direct growth",
+      "expected_scheme_slug": "hsbc-dynamic-bond-fund-direct-growth",
+      "expected_facet": "A2"
+    },
+    {
+      "id": "R08",
+      "query": "minimum SIP HSBC Focused Fund",
+      "expected_scheme_slug": "hsbc-focused-fund-direct-growth",
+      "expected_facet": "A3"
+    },
+    {
+      "id": "R09",
+      "query": "riskometer HSBC Infrastructure Fund",
+      "expected_scheme_slug": "hsbc-infrastructure-fund-direct-growth",
+      "expected_facet": "A5"
+    },
+    {
+      "id": "R10",
+      "query": "benchmark HSBC Consumption Fund direct growth",
+      "expected_scheme_slug": "hsbc-consumption-fund-direct-growth",
+      "expected_facet": "A6"
+    }
+  ]
+}

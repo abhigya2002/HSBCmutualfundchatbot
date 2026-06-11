@@ -1,0 +1,183 @@
+{
+  "registry_version": "1.0.0",
+  "amc": "HSBC Mutual Fund",
+  "description": "Closed corpus: exactly 16 Groww scheme pages. See phase-wise-architecture.md §2.1.",
+  "entries": [
+    {
+      "id": 1,
+      "scheme": "hsbc-india-opportunities-fund-direct-growth",
+      "scheme_display_name": "HSBC India Opportunities Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-india-opportunities-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 2,
+      "scheme": "hsbc-midcap-fund-direct-growth",
+      "scheme_display_name": "HSBC Midcap Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 3,
+      "scheme": "hsbc-small-cap-fund-direct-growth",
+      "scheme_display_name": "HSBC Small Cap Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 4,
+      "scheme": "hsbc-multi-cap-fund-direct-growth",
+      "scheme_display_name": "HSBC Multi Cap Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 5,
+      "scheme": "hsbc-value-fund-direct-growth",
+      "scheme_display_name": "HSBC Value Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-value-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 6,
+      "scheme": "hsbc-large-and-mid-cap-fund-direct-growth",
+      "scheme_display_name": "HSBC Large and Mid Cap Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-large-and-mid-cap-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 7,
+      "scheme": "hsbc-equity-savings-fund-direct-growth",
+      "scheme_display_name": "HSBC Equity Savings Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-equity-savings-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 8,
+      "scheme": "hsbc-infrastructure-fund-direct-growth",
+      "scheme_display_name": "HSBC Infrastructure Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-infrastructure-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 9,
+      "scheme": "hsbc-multi-asset-allocation-fund-direct-growth",
+      "scheme_display_name": "HSBC Multi Asset Allocation Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-multi-asset-allocation-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 10,
+      "scheme": "hsbc-focused-fund-direct-growth",
+      "scheme_display_name": "HSBC Focused Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 11,
+      "scheme": "hsbc-gold-etf-fof-direct-growth",
+      "scheme_display_name": "HSBC Gold ETF FoF (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-gold-etf-fof-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 12,
+      "scheme": "hsbc-india-export-opportunities-fund-direct-growth",
+      "scheme_display_name": "HSBC India Export Opportunities Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-india-export-opportunities-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 13,
+      "scheme": "hsbc-consumption-fund-direct-growth",
+      "scheme_display_name": "HSBC Consumption Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-consumption-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 14,
+      "scheme": "hsbc-medium-duration-fund-direct-growth",
+      "scheme_display_name": "HSBC Medium Duration Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-medium-duration-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 15,
+      "scheme": "hsbc-dynamic-bond-fund-direct-growth",
+      "scheme_display_name": "HSBC Dynamic Bond Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-dynamic-bond-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    },
+    {
+      "id": 16,
+      "scheme": "hsbc-gilt-fund-direct-growth",
+      "scheme_display_name": "HSBC Gilt Fund (Direct Growth)",
+      "url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+      "source_type": "groww_scheme_page",
+      "doc_version": "1.0.0",
+      "published_date": null,
+      "crawl_frequency": "weekly",
+      "active": true
+    }
+  ]
+}

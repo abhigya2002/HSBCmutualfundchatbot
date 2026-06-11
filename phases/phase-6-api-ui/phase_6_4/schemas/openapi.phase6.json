@@ -1,0 +1,78 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HSBC Mutual Fund FAQ Assistant API",
+    "version": "6.4.0",
+    "description": "Phase 6.4 contract stub — POST /chat returns AnswerEnvelope (200) or normalized ApiError."
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Liveness probe",
+        "responses": {
+          "200": {
+            "description": "Service is up"
+          }
+        }
+      }
+    },
+    "/ready": {
+      "get": {
+        "summary": "Readiness probe",
+        "responses": {
+          "200": { "description": "Indexes and GenerationService ready" },
+          "503": { "description": "Not ready" }
+        }
+      }
+    },
+    "/chat": {
+      "post": {
+        "summary": "Facts-only chat",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["query"],
+                "properties": {
+                  "query": { "type": "string" },
+                  "session_id": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "AnswerEnvelope — factual, refusal, or abstention (policy outcomes)"
+          },
+          "400": { "description": "ApiError — validation failure" },
+          "413": { "description": "ApiError — payload too large" },
+          "415": { "description": "ApiError — unsupported Content-Type" },
+          "429": { "description": "ApiError — rate limit (optional)" },
+          "502": { "description": "ApiError — upstream failure" },
+          "503": { "description": "ApiError — service unavailable or timeout" }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ApiError": {
+        "type": "object",
+        "required": ["error"],
+        "properties": {
+          "error": {
+            "type": "object",
+            "required": ["code", "message"],
+            "properties": {
+              "code": { "type": "string" },
+              "message": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

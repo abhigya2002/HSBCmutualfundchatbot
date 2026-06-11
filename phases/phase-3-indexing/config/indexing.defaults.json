@@ -1,0 +1,34 @@
+{
+  "$schema_comment": "Phase 3.5 — keyword index defaults (hybrid with phase-3-chunking vector index).",
+  "phase3_chunking_root": "../phase-3-chunking",
+  "artifact_root": "artifacts",
+  "directories": {
+    "keyword_indexes": "indexes/keyword"
+  },
+  "keyword": {
+    "bm25_k1": 1.5,
+    "bm25_b": 0.75,
+    "facet_phrases": [
+      "exit load",
+      "lock-in",
+      "lock in",
+      "riskometer",
+      "expense ratio",
+      "minimum sip",
+      "min sip",
+      "benchmark",
+      "statement",
+      "tax",
+      "nav",
+      "aum"
+    ]
+  },
+  "logging": {
+    "level": "INFO",
+    "redact_pii": true
+  },
+  "phase3_6": {
+    "recall_at_k": 5,
+    "recall_threshold": 0.5
+  }
+}

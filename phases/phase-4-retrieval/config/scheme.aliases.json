@@ -1,0 +1,35 @@
+{
+  "$schema_comment": "Query-side scheme aliases only (P3-07, P4-02). Never adds corpus URLs.",
+  "version": "1.0.0",
+  "aliases": {
+    "midcap wala hsbc": "hsbc-midcap-fund-direct-growth",
+    "hsbc midcap wala": "hsbc-midcap-fund-direct-growth",
+    "hsbc mid cap": "hsbc-midcap-fund-direct-growth",
+    "hsbc midcap": "hsbc-midcap-fund-direct-growth",
+    "hsbc small cap": "hsbc-small-cap-fund-direct-growth",
+    "small cap wala": "hsbc-small-cap-fund-direct-growth",
+    "hsbc small cap": "hsbc-small-cap-fund-direct-growth",
+    "gilt fund hsbc": "hsbc-gilt-fund-direct-growth",
+    "hsbc gilt": "hsbc-gilt-fund-direct-growth",
+    "multi cap hsbc": "hsbc-multi-cap-fund-direct-growth",
+    "value fund hsbc": "hsbc-value-fund-direct-growth",
+    "focused hsbc": "hsbc-focused-fund-direct-growth",
+    "consumption fund hsbc": "hsbc-consumption-fund-direct-growth",
+    "dynamic bond hsbc": "hsbc-dynamic-bond-fund-direct-growth",
+    "medium duration hsbc": "hsbc-medium-duration-fund-direct-growth",
+    "equity savings hsbc": "hsbc-equity-savings-fund-direct-growth",
+    "infrastructure fund hsbc": "hsbc-infrastructure-fund-direct-growth",
+    "gold etf fof hsbc": "hsbc-gold-etf-fof-direct-growth",
+    "export opportunities hsbc": "hsbc-india-export-opportunities-fund-direct-growth",
+    "india opportunities hsbc": "hsbc-india-opportunities-fund-direct-growth",
+    "multi asset allocation hsbc": "hsbc-multi-asset-allocation-fund-direct-growth",
+    "large and mid cap hsbc": "hsbc-large-and-mid-cap-fund-direct-growth"
+  },
+  "thresholds": {
+    "resolve_min_score": 0.82,
+    "fuzzy_min_ratio": 0.86,
+    "ambiguous_gap": 0.06,
+    "multi_scheme_min_score": 0.72
+  },
+  "default_citation_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth"
+}

@@ -1,0 +1,274 @@
+{
+  "$schema_comment": "Phase 4.2 rule-based intent classifier (v1).",
+  "version": "1.0.0",
+  "policy_version": "query-policy-matrix-1.0",
+  "default_refusal_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth",
+  "feature_flags": {
+    "llm_classifier": false
+  },
+  "confidence": {
+    "high": 0.92,
+    "medium": 0.75,
+    "low": 0.55
+  },
+  "factual_facets": {
+    "A1": {
+      "label": "expense_ratio",
+      "keywords": [
+        "expense ratio",
+        "ter",
+        "total expense ratio",
+        "annual charges",
+        "management fee"
+      ]
+    },
+    "A2": {
+      "label": "exit_load",
+      "keywords": ["exit load", "redemption charge", "redemption fee", "exit fee"]
+    },
+    "A3": {
+      "label": "minimum_investment",
+      "keywords": [
+        "minimum sip",
+        "min sip",
+        "minimum investment",
+        "min investment",
+        "minimum lumpsum",
+        "min lumpsum",
+        "minimum amount"
+      ]
+    },
+    "A4": {
+      "label": "lock_in",
+      "keywords": ["lock in", "lock-in", "lockin", "elss", "3 year lock", "three year lock"]
+    },
+    "A5": {
+      "label": "riskometer",
+      "keywords": ["riskometer", "risk level", "risk rating", "risk profile"]
+    },
+    "A6": {
+      "label": "benchmark",
+      "keywords": ["benchmark", "benchmark index", "fund benchmark"]
+    },
+    "A7": {
+      "label": "statements_tax",
+      "keywords": [
+        "capital gains",
+        "tax statement",
+        "tax document",
+        "cas statement",
+        "consolidated account statement",
+        "download statement",
+        "statement download",
+        "tax implication"
+      ]
+    }
+  },
+  "performance_info": {
+    "policy_code": "P1",
+    "keywords": [
+      "past return",
+      "past performance",
+      "historical return",
+      "cagr",
+      "annual return",
+      "returns in",
+      "1 year return",
+      "3 year return",
+      "5 year return",
+      "nav chart",
+      "performance chart",
+      "since inception"
+    ],
+    "patterns": []
+  },
+  "performance_projection": {
+    "policy_code": "R1",
+    "keywords": [
+      "give good returns",
+      "will it perform",
+      "expected returns",
+      "future performance",
+      "will grow",
+      "will outperform",
+      "outperform",
+      "what will be the nav",
+      "how much will i earn",
+      "how much will i make",
+      "projected returns",
+      "expected nav",
+      "expected return",
+      "projected return"
+    ],
+    "patterns": [
+      "\\bhow much (?:will|would|can) i (?:earn|make|get)\\b",
+      "\\b(?:will|would) i (?:get|make|earn)\\s+\\d",
+      "\\bwill\\b.+\\boutperform\\b",
+      "\\boutperform\\b",
+      "\\bwhat will be the nav\\b",
+      "\\bexpected nav\\b",
+      "\\bprojected returns\\b",
+      "\\bgive good returns\\b",
+      "\\bexpected returns\\b"
+    ]
+  },
+  "advisory": {
+    "policy_code": "R1",
+    "keywords": [
+      "should i buy",
+      "should i invest",
+      "is it good for me",
+      "is it good",
+      "is this good",
+      "good investment",
+      "good for me",
+      "good for long term",
+      "good for short term",
+      "worth buying",
+      "worth investing",
+      "is it worth investing",
+      "suitable for me",
+      "good fund",
+      "bad fund",
+      "advice",
+      "your opinion",
+      "which fund should i",
+      "is it safe to invest",
+      "should i do sip",
+      "is it a good time",
+      "is it safe",
+      "safe to invest"
+    ],
+    "patterns": [
+      "\\bshould i invest\\b",
+      "\\bshould i buy\\b",
+      "\\bshould i do sip\\b",
+      "\\bis it good for me\\b",
+      "\\bis it (?:a )?good (?:fund|investment|time)\\b",
+      "\\bis it a good time\\b",
+      "\\bis it worth investing\\b",
+      "\\bis\\s+.+(?:a )?good\\s+investment\\b",
+      "\\bgood investment\\b",
+      "\\bgood for long term\\b",
+      "\\bgood for short term\\b",
+      "\\b(?:can|should) i invest\\b",
+      "\\bwhich fund should i\\b",
+      "\\bis it safe to invest\\b",
+      "\\bis it safe\\b",
+      "\\bis\\s+.+(?:fund )?safe\\b",
+      "\\bsafe to invest\\b"
+    ]
+  },
+  "comparison": {
+    "policy_code": "R2",
+    "keywords": [
+      "which is better",
+      "which fund is better",
+      "which is best",
+      "which is the best fund",
+      "better for me",
+      "compare",
+      "comparison",
+      "versus",
+      " vs ",
+      " vs.",
+      "better than",
+      "best returns",
+      "best fund",
+      "which fund has",
+      "rank funds",
+      "ranking",
+      "best mutual fund in india"
+    ],
+    "patterns": [
+      "\\bcompare\\b.+\\band\\b",
+      "\\b(?:which|what) is better\\b",
+      "\\bwhich\\s+(?:\\w+\\s+)*fund is better\\b",
+      "\\bwhich\\s+(?:\\w+\\s+)*fund is best\\b",
+      "\\bwhich is best\\b",
+      "\\bwhich is the best\\b",
+      "\\bbetter for me\\b",
+      "\\bbest returns\\b",
+      "\\bwhich fund has\\b",
+      "\\bbest mutual fund in india\\b",
+      "\\bvs\\.?\\b",
+      "\\bversus\\b"
+    ]
+  },
+  "ambiguous": {
+    "policy_code": "O1",
+    "keywords": [
+      "hsbc fund info",
+      "tell me about hsbc",
+      "fund info"
+    ],
+    "patterns": [
+      "^hsbc$",
+      "^tell me about hsbc$",
+      "^hsbc fund info$",
+      "^hsbc mutual fund$",
+      "^hsbc funds?$"
+    ]
+  },
+  "out_of_scope": {
+    "policy_codes": ["R3", "O1", "P4-01", "P4-10"],
+    "non_hsbc_amc_keywords": [
+      "icici",
+      "hdfc",
+      "sbi",
+      "sbi mutual",
+      "axis",
+      "axis mutual",
+      "kotak",
+      "kotak mutual",
+      "nippon",
+      "parag parikh",
+      "uti",
+      "uti mutual",
+      "dsp",
+      "dsp mutual",
+      "mirae",
+      "franklin templeton",
+      "aditya birla",
+      "tata",
+      "tata mutual"
+    ],
+    "off_topic_keywords": ["weather", "cricket", "recipe", "movie"],
+    "greeting_keywords": ["hello", "hi", "hey", "good morning", "good evening"],
+    "unsupported_language_note": "devanagari_ratio_threshold",
+    "pii_patterns": [
+      "\\b[A-Z]{5}[0-9]{4}[A-Z]\\b",
+      "\\b\\d{4}\\s?\\d{4}\\s?\\d{4}\\b",
+      "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b",
+      "\\botp\\b",
+      "\\bpan\\s*(?:number|no\\.?)?\\b",
+      "\\baadhaar\\b",
+      "\\baccount\\s*number\\b"
+    ]
+  },
+  "prompt_injection": {
+    "policy_code": "R5",
+    "keywords": [
+      "ignore rules",
+      "ignore previous",
+      "ignore instructions",
+      "ignore all instructions",
+      "system prompt",
+      "reveal your system prompt",
+      "jailbreak",
+      "cite google",
+      "cite wikipedia",
+      "<script>"
+    ],
+    "patterns": [
+      "\\bignore (?:all )?(?:rules|instructions|previous)\\b",
+      "\\breveal (?:your )?system prompt\\b",
+      "\\bpretend you are\\b",
+      "<script"
+    ]
+  },
+  "mixed_intent": {
+    "policy_code": "R4",
+    "note": "Refusal-first when factual facet co-occurs with advisory, comparison, or projection signals."
+  }
+}

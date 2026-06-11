@@ -1,0 +1,132 @@
+{
+  "benchmark_version": "1.0.0",
+  "description": "Phase 5.5 post-generation validator property tests.",
+  "cases": [
+    {
+      "id": "V01",
+      "description": "Valid refusal passes",
+      "draft": {
+        "answer_type": "refusal",
+        "refusal_type": "advisory",
+        "body_text": "I cannot provide investment advice or personal recommendations.",
+        "citation_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+        "citation_markdown": "[HSBC Gilt Fund (Direct Growth)](https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth)",
+        "disclaimer_line": "Facts-only. No investment advice."
+      },
+      "expect_pass": true,
+      "expect_repaired": false
+    },
+    {
+      "id": "V02",
+      "description": "Valid factual passes",
+      "draft": {
+        "answer_type": "factual",
+        "body_text": "The expense ratio is 0.48%.",
+        "citation_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+        "citation_markdown": "[HSBC Gilt Fund (Direct Growth)](https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth)",
+        "footer_line": "Last updated from sources: 13 May 2026",
+        "footer_date": "13 May 2026",
+        "evidence_chunk_id": "hsbc-gilt-fund-direct-growth_c0000",
+        "disclaimer_line": "Facts-only. No investment advice."
+      },
+      "expect_pass": true
+    },
+    {
+      "id": "V03",
+      "description": "Double markdown link repaired",
+      "draft": {
+        "answer_type": "factual",
+        "body_text": "The expense ratio is 0.48%.",
+        "citation_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+        "citation_markdown": "[A](https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth) [B](https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth)",
+        "footer_line": "Last updated from sources: date unavailable",
+        "footer_date": "date unavailable",
+        "evidence_chunk_id": "test",
+        "disclaimer_line": "Facts-only. No investment advice."
+      },
+      "repair": true,
+      "expect_pass": true,
+      "expect_repaired": true
+    },
+    {
+      "id": "V04",
+      "description": "Semicolon clause budget fails then truncates",
+      "draft": {
+        "answer_type": "refusal",
+        "refusal_type": "advisory",
+        "body_text": "Clause one; clause two; clause three; clause four",
+        "citation_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth",
+        "citation_markdown": "[HSBC Multi Cap Fund — Direct Growth](https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth)",
+        "disclaimer_line": "Facts-only. No investment advice."
+      },
+      "repair": true,
+      "expect_pass": true,
+      "expect_repaired": true
+    },
+    {
+      "id": "V05",
+      "description": "Non-allowlisted citation repaired to default",
+      "draft": {
+        "answer_type": "refusal",
+        "refusal_type": "comparison",
+        "body_text": "I cannot compare mutual funds.",
+        "citation_url": "https://google.com",
+        "citation_markdown": "[Google](https://google.com)",
+        "disclaimer_line": "Facts-only. No investment advice."
+      },
+      "repair": true,
+      "expect_pass": true,
+      "expect_repaired": true,
+      "expect_citation_host": "groww.in"
+    },
+    {
+      "id": "V06",
+      "description": "Prohibited advice phrase falls back to safe refusal",
+      "draft": {
+        "answer_type": "factual",
+        "body_text": "You should buy this fund because it is a good investment.",
+        "citation_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+        "citation_markdown": "[HSBC Gilt Fund (Direct Growth)](https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth)",
+        "footer_line": "Last updated from sources: date unavailable",
+        "footer_date": "date unavailable",
+        "evidence_chunk_id": "test",
+        "disclaimer_line": "Facts-only. No investment advice."
+      },
+      "repair": true,
+      "expect_pass": true,
+      "expect_repaired": true,
+      "expect_answer_type": "refusal"
+    },
+    {
+      "id": "V07",
+      "description": "Quoted prohibited echo allowed",
+      "draft": {
+        "answer_type": "refusal",
+        "refusal_type": "advisory",
+        "body_text": "I cannot answer \"should I buy HSBC Gilt Fund\" with advice.",
+        "citation_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+        "citation_markdown": "[HSBC Gilt Fund (Direct Growth)](https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth)",
+        "disclaimer_line": "Facts-only. No investment advice."
+      },
+      "expect_pass": true
+    },
+    {
+      "id": "V08",
+      "description": "Missing factual footer repaired",
+      "draft": {
+        "answer_type": "factual",
+        "body_text": "The exit load is Nil.",
+        "citation_url": "https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth",
+        "citation_markdown": "[HSBC Midcap Fund (Direct Growth)](https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth)",
+        "footer_line": "",
+        "footer_date": "",
+        "evidence_chunk_id": "test",
+        "disclaimer_line": "Facts-only. No investment advice."
+      },
+      "repair": true,
+      "expect_pass": true,
+      "expect_repaired": true,
+      "expect_footer_contains": "date unavailable"
+    }
+  ]
+}

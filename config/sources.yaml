@@ -1,0 +1,37 @@
+# Closed corpus — exactly 16 HSBC Groww scheme pages (Phase 1 registry).
+version: "1.0.0"
+amc: HSBC Mutual Fund
+description: Allowlisted sources for mf_faq ingestion and daily refresh.
+sources:
+  - scheme: hsbc-india-opportunities-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-india-opportunities-fund-direct-growth
+  - scheme: hsbc-midcap-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth
+  - scheme: hsbc-small-cap-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth
+  - scheme: hsbc-multi-cap-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth
+  - scheme: hsbc-value-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-value-fund-direct-growth
+  - scheme: hsbc-large-and-mid-cap-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-large-and-mid-cap-fund-direct-growth
+  - scheme: hsbc-equity-savings-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-equity-savings-fund-direct-growth
+  - scheme: hsbc-infrastructure-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-infrastructure-fund-direct-growth
+  - scheme: hsbc-multi-asset-allocation-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-multi-asset-allocation-fund-direct-growth
+  - scheme: hsbc-focused-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth
+  - scheme: hsbc-gold-etf-fof-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-gold-etf-fof-direct-growth
+  - scheme: hsbc-india-export-opportunities-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-india-export-opportunities-fund-direct-growth
+  - scheme: hsbc-consumption-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-consumption-fund-direct-growth
+  - scheme: hsbc-medium-duration-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-medium-duration-fund-direct-growth
+  - scheme: hsbc-dynamic-bond-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-dynamic-bond-fund-direct-growth
+  - scheme: hsbc-gilt-fund-direct-growth
+    url: https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth

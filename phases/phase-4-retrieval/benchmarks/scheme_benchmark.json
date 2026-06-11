@@ -1,0 +1,106 @@
+{
+  "benchmark_version": "1.0.0",
+  "description": "Phase 4.3 scheme resolution: slug, nickname, typo, multi-scheme, unknown.",
+  "cases": [
+    {
+      "id": "S01",
+      "query": "What is the expense ratio of HSBC Gilt Fund Direct Growth?",
+      "expected_status": "resolved",
+      "expected_scheme": "hsbc-gilt-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth"
+    },
+    {
+      "id": "S02",
+      "query": "exit load for HSBC Midcap Fund direct growth",
+      "expected_status": "resolved",
+      "expected_scheme": "hsbc-midcap-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth"
+    },
+    {
+      "id": "S03",
+      "query": "minimum SIP amount HSBC Small Cap Fund",
+      "expected_status": "resolved",
+      "expected_scheme": "hsbc-small-cap-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth"
+    },
+    {
+      "id": "S04",
+      "query": "benchmark index HSBC Multi Cap Fund",
+      "expected_status": "resolved",
+      "expected_scheme": "hsbc-multi-cap-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth"
+    },
+    {
+      "id": "S05",
+      "query": "expense ratio for midcap wala hsbc",
+      "expected_status": "resolved",
+      "expected_scheme": "hsbc-midcap-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth"
+    },
+    {
+      "id": "S06",
+      "query": "TER hsbc giltt fund direct growth",
+      "expected_status": "resolved",
+      "expected_scheme": "hsbc-gilt-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth"
+    },
+    {
+      "id": "S07",
+      "query": "https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth exit load",
+      "expected_status": "resolved",
+      "expected_scheme": "hsbc-focused-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth"
+    },
+    {
+      "id": "S08",
+      "query": "Compare HSBC Midcap Fund and HSBC Small Cap Fund",
+      "expected_status": "ambiguous",
+      "expected_scheme": ""
+    },
+    {
+      "id": "S09",
+      "query": "Which is better HSBC Midcap or HSBC Small Cap?",
+      "expected_status": "ambiguous",
+      "expected_scheme": ""
+    },
+    {
+      "id": "S10",
+      "query": "expense ratio ICICI Prudential Bluechip Fund",
+      "expected_status": "unknown",
+      "expected_scheme": ""
+    },
+    {
+      "id": "S11",
+      "query": "what is the expense ratio",
+      "expected_status": "unknown",
+      "expected_scheme": ""
+    },
+    {
+      "id": "S12",
+      "query": "riskometer HSBC Value Fund direct growth",
+      "expected_status": "resolved",
+      "expected_scheme": "hsbc-value-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-value-fund-direct-growth"
+    },
+    {
+      "id": "S13",
+      "query": "minimum investment HSBC Dynamic Bond Fund",
+      "expected_status": "resolved",
+      "expected_scheme": "hsbc-dynamic-bond-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-dynamic-bond-fund-direct-growth"
+    },
+    {
+      "id": "S14",
+      "query": "HSBC Midcap Fund vs HSBC Value Fund",
+      "expected_status": "ambiguous",
+      "expected_scheme": ""
+    },
+    {
+      "id": "S15",
+      "query": "hsbc infrastrucure fund expense ratio",
+      "expected_status": "resolved",
+      "expected_scheme": "hsbc-infrastructure-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-infrastructure-fund-direct-growth"
+    }
+  ]
+}

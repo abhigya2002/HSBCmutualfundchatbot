@@ -1,0 +1,11 @@
+# Ignore fetched corpus bytes and large intermediates (tune as needed)
+artifacts/raw/*
+!artifacts/raw/.gitkeep
+artifacts/clean/*
+!artifacts/clean/.gitkeep
+artifacts/extracted/*
+!artifacts/extracted/.gitkeep
+artifacts/metadata/*
+!artifacts/metadata/.gitkeep
+artifacts/quarantine/*
+!artifacts/quarantine/.gitkeep

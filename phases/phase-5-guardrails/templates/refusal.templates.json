@@ -1,0 +1,27 @@
+{
+  "$schema_comment": "Fixed user-visible refusal copy for Phase 5.3 (message_hint from Phase 4 is internal only).",
+  "version": "1.0.0",
+  "templates": {
+    "advisory": {
+      "body": "I cannot provide investment advice or personal recommendations. I can only share factual information from official HSBC scheme pages on Groww."
+    },
+    "comparison": {
+      "body": "I cannot compare mutual funds or say which option is better. I can help with factual details from our allowlisted HSBC scheme pages."
+    },
+    "mixed_intent": {
+      "body": "Your question mixes factual and advice-seeking wording. Please ask a factual question about one HSBC scheme on Groww."
+    },
+    "out_of_scope": {
+      "body": "That question is outside the HSBC mutual fund schemes covered by this assistant."
+    },
+    "disambiguate": {
+      "body": "Please name a specific HSBC scheme on Groww so I can look up factual details such as expense ratio or exit load."
+    },
+    "performance_info": {
+      "body": "I can point to factual performance data on the official scheme page but cannot predict or project future returns."
+    }
+  },
+  "fallback": {
+    "body": "I can only answer factual questions from allowlisted official HSBC sources on Groww."
+  }
+}

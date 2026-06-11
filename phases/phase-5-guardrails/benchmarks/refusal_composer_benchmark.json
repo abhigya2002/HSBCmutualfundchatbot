@@ -1,0 +1,54 @@
+{
+  "benchmark_version": "1.0.0",
+  "description": "Phase 5.3 refusal composer — all refusal types, allowlist-only citation, single link.",
+  "cases": [
+    {
+      "id": "R01",
+      "refusal_type": "advisory",
+      "citation_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth"
+    },
+    {
+      "id": "R02",
+      "refusal_type": "comparison",
+      "citation_url": "https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth",
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth"
+    },
+    {
+      "id": "R03",
+      "refusal_type": "mixed_intent",
+      "citation_url": "https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth",
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth"
+    },
+    {
+      "id": "R04",
+      "refusal_type": "out_of_scope",
+      "citation_url": "",
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth"
+    },
+    {
+      "id": "R05",
+      "refusal_type": "disambiguate",
+      "citation_url": "",
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth"
+    },
+    {
+      "id": "R06",
+      "refusal_type": "performance_info",
+      "citation_url": "https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth",
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth"
+    },
+    {
+      "id": "R07",
+      "refusal_type": "advisory",
+      "citation_url": "https://google.com",
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth"
+    },
+    {
+      "id": "R08",
+      "refusal_type": "comparison",
+      "citation_url": "groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+      "expected_citation_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth"
+    }
+  ]
+}

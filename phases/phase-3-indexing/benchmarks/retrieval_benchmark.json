@@ -1,0 +1,90 @@
+{
+  "benchmark_version": "1.0.0",
+  "description": "Canonical factual queries (Phase 0 taxonomy A1–A7) with expected allowlisted citation targets.",
+  "queries": [
+    {
+      "id": "B01",
+      "intent": "A1",
+      "query": "What is the expense ratio of HSBC Gilt Fund Direct Growth?",
+      "scheme": "hsbc-gilt-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth"
+    },
+    {
+      "id": "B02",
+      "intent": "A2",
+      "query": "exit load for HSBC Midcap Fund direct growth",
+      "scheme": "hsbc-midcap-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth"
+    },
+    {
+      "id": "B03",
+      "intent": "A3",
+      "query": "minimum SIP amount HSBC Small Cap Fund",
+      "scheme": "hsbc-small-cap-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth"
+    },
+    {
+      "id": "B04",
+      "intent": "A6",
+      "query": "benchmark index HSBC Multi Cap Fund",
+      "scheme": "hsbc-multi-cap-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth"
+    },
+    {
+      "id": "B05",
+      "intent": "A5",
+      "query": "riskometer HSBC Value Fund direct growth",
+      "scheme": "hsbc-value-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-value-fund-direct-growth"
+    },
+    {
+      "id": "B06",
+      "intent": "A1",
+      "query": "TER HSBC Large and Mid Cap Fund",
+      "scheme": "hsbc-large-and-mid-cap-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-large-and-mid-cap-fund-direct-growth"
+    },
+    {
+      "id": "B07",
+      "intent": "A2",
+      "query": "HSBC Equity Savings Fund exit load",
+      "scheme": "hsbc-equity-savings-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-equity-savings-fund-direct-growth"
+    },
+    {
+      "id": "B08",
+      "intent": "A3",
+      "query": "minimum investment HSBC Dynamic Bond Fund",
+      "scheme": "hsbc-dynamic-bond-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-dynamic-bond-fund-direct-growth"
+    },
+    {
+      "id": "B09",
+      "intent": "A6",
+      "query": "fund benchmark HSBC Medium Duration Fund",
+      "scheme": "hsbc-medium-duration-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-medium-duration-fund-direct-growth"
+    },
+    {
+      "id": "B10",
+      "intent": "A5",
+      "query": "risk level HSBC Consumption Fund",
+      "scheme": "hsbc-consumption-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-consumption-fund-direct-growth"
+    },
+    {
+      "id": "B11",
+      "intent": "A1",
+      "query": "expense ratio HSBC Focused Fund direct growth",
+      "scheme": "hsbc-focused-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth"
+    },
+    {
+      "id": "B12",
+      "intent": "A7",
+      "query": "tax implication HSBC Gilt Fund",
+      "scheme": "hsbc-gilt-fund-direct-growth",
+      "expected_source_url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Go-Live Checklist</title>
+  <style>
+    :root {
+      --bg: #0f1117; --accent: #2563eb; --text: #ffffff;
+      --muted: #6b7280; --card: #1a1d27; --border: #2d3140;
+      --success: #22c55e; --danger: #ef4444;
+    }
+    body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); padding: 2rem; max-width: 960px; margin: 0 auto; }
+    h1 { margin-bottom: 0.25rem; }
+    .verdict { font-size: 1.25rem; font-weight: 700; padding: 1rem 1.25rem; border-radius: 12px; margin: 1.5rem 0; text-align: center; }
+    .verdict.ready { background: rgba(34,197,94,0.15); border: 2px solid var(--success); color: var(--success); }
+    .verdict.not-ready { background: rgba(239,68,68,0.15); border: 2px solid var(--danger); color: var(--danger); }
+    section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; margin-bottom: 1.25rem; }
+    h2 { color: var(--accent); font-size: 1rem; margin-bottom: 0.75rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+    .status.pass { color: var(--success); font-weight: 600; }
+    .status.fail { color: var(--danger); font-weight: 600; }
+    .manual-row { display: flex; gap: 0.75rem; padding: 0.45rem 0; border-bottom: 1px solid var(--border); cursor: pointer; }
+    .manual-row:last-child { border-bottom: none; }
+    input { accent-color: var(--accent); width: 16px; height: 16px; }
+    ul { padding-left: 1.25rem; }
+    li { margin-bottom: 0.5rem; }
+    .meta { color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <h1>Go-Live Checklist</h1>
+  <p class="meta">Generated: 2026-06-11T13:03:46.139813+00:00</p>
+
+  <div class="verdict ready" id="verdict">READY FOR DEPLOYMENT ✅</div>
+
+  <section>
+    <h2>Pre-deployment checks (auto-verified)</h2>
+    <table>
+      <thead><tr><th>Check</th><th>Result</th><th>Status</th></tr></thead>
+      <tbody><tr><td>Phase 7.2 overall score ≥ 95%</td><td>98%</td><td><span class='status pass'>PASS</span></td></tr>
+<tr><td>Phase 6.6 E2E score ≥ 90%</td><td>100%</td><td><span class='status pass'>PASS</span></td></tr>
+<tr><td>All 16 source URLs reachable</td><td>16/16 URLs reachable</td><td><span class='status pass'>PASS</span></td></tr>
+<tr><td>/health returns ok</td><td>200</td><td><span class='status pass'>PASS</span></td></tr>
+<tr><td>/ready returns ok</td><td>ready=True</td><td><span class='status pass'>PASS</span></td></tr>
+<tr><td>No allowlist violations in test runs</td><td>clean</td><td><span class='status pass'>PASS</span></td></tr>
+<tr><td>Average latency &lt; 10000ms</td><td>4106 ms (5 samples)</td><td><span class='status pass'>PASS</span></td></tr>
+</tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Manual sign-off items</h2>
+    <label class="manual-row"><input type="checkbox" id="manual-0" onchange="updateVerdict()"/> <span>README is complete and accurate</span></label>
+<label class="manual-row"><input type="checkbox" id="manual-1" onchange="updateVerdict()"/> <span>.env file is NOT committed to git</span></label>
+<label class="manual-row"><input type="checkbox" id="manual-2" onchange="updateVerdict()"/> <span>API key is not hardcoded anywhere</span></label>
+<label class="manual-row"><input type="checkbox" id="manual-3" onchange="updateVerdict()"/> <span>All Phase 1-8 deliverables documented</span></label>
+<label class="manual-row"><input type="checkbox" id="manual-4" onchange="updateVerdict()"/> <span>Known limitations documented</span></label>
+<label class="manual-row"><input type="checkbox" id="manual-5" onchange="updateVerdict()"/> <span>Incident playbooks written</span></label>
+<label class="manual-row"><input type="checkbox" id="manual-6" onchange="updateVerdict()"/> <span>Monitoring alerts configured</span></label>
+
+  </section>
+
+  <section>
+    <h2>Risk assessment</h2>
+    <ul><li><strong>1. Groww page structure changes → parser breaks</strong> → Mitigation: content hash monitoring</li>
+<li><strong>2. Groq API downtime → extractive fallback active</strong> → Mitigation: USE_GROQ=false fallback</li>
+<li><strong>3. Stale corpus → wrong facts</strong> → Mitigation: weekly re-index scheduled</li>
+</ul>
+  </section>
+
+  <script>
+    const autoPass = true;
+    const autoFailed = 0;
+    const manualTotal = 7;
+
+    function updateVerdict() {
+      const manualDone = document.querySelectorAll('input[type=checkbox]:checked').length;
+      const el = document.getElementById('verdict');
+      if (autoPass && manualDone === manualTotal) {
+        el.textContent = 'READY FOR DEPLOYMENT ✅';
+        el.className = 'verdict ready';
+      } else if (!autoPass) {
+        el.textContent = 'NOT READY ❌ — ' + autoFailed + ' auto-check(s) need attention';
+        el.className = 'verdict not-ready';
+      } else {
+        el.textContent = 'NOT READY ❌ — ' + (manualTotal - manualDone) + ' manual item(s) pending';
+        el.className = 'verdict not-ready';
+      }
+    }
+  </script>
+</body>
+</html>

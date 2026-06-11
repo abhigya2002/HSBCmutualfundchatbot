@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>HSBC QA Dashboard</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --accent: #2563eb;
+      --text: #ffffff;
+      --muted: #6b7280;
+      --card: #1a1d27;
+      --border: #2d3140;
+      --success: #22c55e;
+      --danger: #ef4444;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; padding: 2rem; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+    .subtitle { color: var(--muted); margin-bottom: 1.5rem; }
+    .status-bar { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 2rem; padding: 1rem 1.25rem; background: var(--card); border: 1px solid var(--border); border-radius: 12px; }
+    .status-dot { width: 14px; height: 14px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 12px #22c55e; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; }
+    .card h3 { font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+    .card .value { font-size: 2rem; font-weight: 700; color: var(--accent); }
+    section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem; }
+    section h2 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--accent); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th, td { text-align: left; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); font-weight: 600; }
+    .badge { background: var(--accent); color: #fff; padding: 0.15rem 0.5rem; border-radius: 6px; font-size: 0.8rem; }
+    .meta { color: var(--muted); font-size: 0.85rem; }
+    .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; }
+    .dot.ok { background: var(--success); }
+    .dot.fail { background: var(--danger); }
+    td.url { font-size: 0.75rem; word-break: break-all; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <h1>HSBC Mutual Fund Assistant — QA Dashboard</h1>
+  <p class="subtitle">Phase 7.3 observability snapshot</p>
+
+  <div class="status-bar">
+    <span class="status-dot"></span>
+    <strong>Overall health: HEALTHY</strong>
+    <span class="meta">Last run: 2026-06-11 13:03:02 UTC</span>
+  </div>
+
+  <div class="cards">
+    <div class="card"><h3>Retrieval Quality</h3><div class="value">97%</div><div class="meta">Phase 7.2 Suite 1 factual</div></div>
+    <div class="card"><h3>Refusal Accuracy</h3><div class="value">100%</div><div class="meta">Phase 7.2 Suite 2 refusal</div></div>
+    <div class="card"><h3>Format Compliance</h3><div class="value">100%</div><div class="meta">Phase 7.2 Suite 3 edge</div></div>
+    <div class="card"><h3>Source Freshness</h3><div class="value">16/16</div><div class="meta">Groww URLs reachable</div></div>
+  </div>
+
+  <section>
+    <h2>Phase 7.2 Test Pack Results</h2>
+    <p class="meta" style="margin-bottom:0.75rem">Overall: 64/65 (98%)</p>
+    <table>
+      <thead><tr><th>Suite</th><th>Score</th><th>Pass Rate</th></tr></thead>
+      <tbody><tr><td>Suite 1 — Factual</td><td>29/30</td><td><span class='badge'>97%</span></td></tr>
+<tr><td>Suite 2 — Refusal</td><td>20/20</td><td><span class='badge'>100%</span></td></tr>
+<tr><td>Suite 3 — Edge Cases</td><td>15/15</td><td><span class='badge'>100%</span></td></tr></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Phase 6.6 E2E Validation</h2>
+    <p class="meta">Score: 20/20 (100%) &nbsp;|&nbsp; Run: 2026-06-09T13:45:22.983891+00:00</p>
+    <table>
+      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Checks passed</td><td>20/20 (100%)</td></tr>
+        <tr><td>Failed checks</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="grid-2">
+    <section>
+      <h2>Live API Status</h2>
+      <table>
+        <tbody>
+          <tr><td>/health</td><td>OK</td></tr>
+          <tr><td>/ready</td><td>OK (ready=True)</td></tr>
+          <tr><td>Avg latency (5 probes)</td><td>3411 ms</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Source URL Reachability</h2>
+      <table>
+        <thead><tr><th>URL</th><th>Status</th></tr></thead>
+        <tbody><tr><td class='url'>https://groww.in/mutual-funds/hsbc-india-opportunities-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-value-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-large-and-mid-cap-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-equity-savings-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-infrastructure-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-multi-asset-allocation-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-gold-etf-fof-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-india-export-opportunities-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-consumption-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-medium-duration-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-dynamic-bond-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+<tr><td class='url'>https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth</td><td><span class='dot ok'></span> 200</td></tr>
+</tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

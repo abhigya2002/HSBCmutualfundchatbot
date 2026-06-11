@@ -1,0 +1,17 @@
+id,scheme,scheme_display_name,url,source_type,doc_version,published_date,crawl_frequency,active
+1,hsbc-india-opportunities-fund-direct-growth,"HSBC India Opportunities Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-india-opportunities-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+2,hsbc-midcap-fund-direct-growth,"HSBC Midcap Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-midcap-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+3,hsbc-small-cap-fund-direct-growth,"HSBC Small Cap Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-small-cap-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+4,hsbc-multi-cap-fund-direct-growth,"HSBC Multi Cap Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+5,hsbc-value-fund-direct-growth,"HSBC Value Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-value-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+6,hsbc-large-and-mid-cap-fund-direct-growth,"HSBC Large and Mid Cap Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-large-and-mid-cap-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+7,hsbc-equity-savings-fund-direct-growth,"HSBC Equity Savings Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-equity-savings-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+8,hsbc-infrastructure-fund-direct-growth,"HSBC Infrastructure Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-infrastructure-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+9,hsbc-multi-asset-allocation-fund-direct-growth,"HSBC Multi Asset Allocation Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-multi-asset-allocation-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+10,hsbc-focused-fund-direct-growth,"HSBC Focused Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-focused-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+11,hsbc-gold-etf-fof-direct-growth,"HSBC Gold ETF FoF (Direct Growth)",https://groww.in/mutual-funds/hsbc-gold-etf-fof-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+12,hsbc-india-export-opportunities-fund-direct-growth,"HSBC India Export Opportunities Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-india-export-opportunities-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+13,hsbc-consumption-fund-direct-growth,"HSBC Consumption Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-consumption-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+14,hsbc-medium-duration-fund-direct-growth,"HSBC Medium Duration Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-medium-duration-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+15,hsbc-dynamic-bond-fund-direct-growth,"HSBC Dynamic Bond Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-dynamic-bond-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true
+16,hsbc-gilt-fund-direct-growth,"HSBC Gilt Fund (Direct Growth)",https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth,groww_scheme_page,1.0.0,,weekly,true

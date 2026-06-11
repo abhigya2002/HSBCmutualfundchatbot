@@ -1,0 +1,59 @@
+{
+  "$schema_comment": "Phase 5 — guardrails and response generation defaults.",
+  "phase4_retrieval_root": "../phase-4-retrieval",
+  "artifact_root": "artifacts",
+  "directories": {
+    "eval": "eval",
+    "service": "service",
+    "logs": "logs",
+    "templates": "templates"
+  },
+  "handoff_files": {
+    "phase5_retrieval_handoff": "../phase-4-retrieval/artifacts/service/phase5_retrieval_handoff.json"
+  },
+  "composer": {
+    "max_sentences": 3,
+    "citation_format": "markdown_link",
+    "citation_markdown_template": "[{label}]({url})",
+    "footer_template": "Last updated from sources: {date}",
+    "footer_date_unavailable": "date unavailable",
+    "default_citation_url": "https://groww.in/mutual-funds/hsbc-multi-cap-fund-direct-growth",
+    "default_citation_label": "HSBC Multi Cap Fund — Direct Growth",
+    "disclaimer_line": "Facts-only. No investment advice."
+  },
+  "refusal_templates_path": "templates/refusal.templates.json",
+  "factual_templates_path": "templates/factual.templates.json",
+  "factual": {
+    "mode": "extractive_v1",
+    "llm_enabled": false,
+    "max_body_sentences": 2,
+    "include_section_clarifier": true,
+    "strip_uncited_numbers": true
+  },
+  "prohibited_phrases_path": "config/prohibited.phrases.json",
+  "compliance": {
+    "abstain_on_not_found": true,
+    "strip_query_injection": true,
+    "require_chunk_text_for_compose": true
+  },
+  "validation": {
+    "max_sentences": 3,
+    "count_semicolon_clauses": true,
+    "require_disclaimer": true,
+    "require_footer_for_factual": true,
+    "enable_repair": true,
+    "fallback_to_refusal_on_failure": true,
+    "fallback_refusal_type": "advisory"
+  },
+  "abstention_templates_path": "templates/abstention.templates.json",
+  "service": {
+    "compliance_pass_rate_threshold": 1.0,
+    "redteam_pass_rate_threshold": 0.9,
+    "factual_format_pass_rate_threshold": 0.8,
+    "write_handoff_on_eval": true
+  },
+  "logging": {
+    "level": "INFO",
+    "redact_pii": true
+  }
+}

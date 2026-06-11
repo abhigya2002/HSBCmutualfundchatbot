@@ -1,0 +1,61 @@
+{
+  "$schema_comment": "Phase 6 — API and UI defaults (Phase 6.1 workspace).",
+  "phase5_guardrails_root": "../phase-5-guardrails",
+  "phase4_retrieval_root": "../phase-4-retrieval",
+  "phase3_chunking_root": "../phase-3-chunking",
+  "phase3_indexing_root": "../phase-3-indexing",
+  "artifact_root": "artifacts",
+  "directories": {
+    "eval": "eval",
+    "service": "service",
+    "logs": "logs",
+    "api": "api",
+    "ui": "ui"
+  },
+  "handoff_files": {
+    "phase6_generation_handoff": "../phase-5-guardrails/artifacts/service/phase6_generation_handoff.json"
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8000,
+    "request_timeout_seconds": 30
+  },
+  "validation": {
+    "max_request_body_bytes": 16384,
+    "max_query_length": 2000,
+    "max_session_id_length": 128,
+    "required_content_type": "application/json"
+  },
+  "cors": {
+    "dev_origins": [
+      "http://localhost:3000",
+      "http://127.0.0.1:3000",
+      "http://localhost:3001",
+      "http://127.0.0.1:3001",
+      "http://127.0.0.1:8000",
+      "http://localhost:8000"
+    ],
+    "prod_origins": []
+  },
+  "logging": {
+    "level": "INFO",
+    "redact_pii": true,
+    "redact_field_names": [
+      "pan",
+      "aadhaar",
+      "account_number",
+      "otp",
+      "email",
+      "phone"
+    ]
+  },
+  "session": {
+    "stateless": true,
+    "notes": "No transcript persistence; session_id is ephemeral and must not contain PII."
+  },
+  "api": {
+    "health_path": "/health",
+    "readiness_path": "/ready",
+    "validated_post_paths": ["/chat"]
+  }
+}

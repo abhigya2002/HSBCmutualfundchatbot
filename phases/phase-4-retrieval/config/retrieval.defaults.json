@@ -1,0 +1,48 @@
+{
+  "$schema_comment": "Phase 4 — retrieval service defaults.",
+  "phase3_chunking_root": "../phase-3-chunking",
+  "phase3_indexing_root": "../phase-3-indexing",
+  "artifact_root": "artifacts",
+  "directories": {
+    "eval": "eval",
+    "service": "service",
+    "logs": "logs"
+  },
+  "handoff_files": {
+    "phase4_retrieval_handoff": "phase4_retrieval_handoff.json",
+    "hybrid_retrieval_contract": "hybrid_retrieval_contract.json",
+    "phase3_index_manifest": "phase3_index_manifest.json",
+    "retrieval_benchmark": "../phase-3-indexing/benchmarks/retrieval_benchmark.json",
+    "intent_benchmark": "benchmarks/intent_benchmark.json",
+    "intent_rules": "config/intent.rules.json",
+    "scheme_benchmark": "benchmarks/scheme_benchmark.json",
+    "scheme_aliases": "config/scheme.aliases.json",
+    "adversarial_benchmark": "benchmarks/adversarial_benchmark.json"
+  },
+  "intent": {
+    "rules_path": "config/intent.rules.json",
+    "llm_classifier": false
+  },
+  "scheme": {
+    "aliases_path": "config/scheme.aliases.json"
+  },
+  "hybrid": {
+    "config_path": "config/hybrid.defaults.json",
+    "top_k_per_channel": 5,
+    "fused_pool_size": 12,
+    "recall_at_k_threshold": 0.85
+  },
+  "rerank": {
+    "config_path": "config/rerank.defaults.json",
+    "citation_accuracy_threshold": 0.9
+  },
+  "service": {
+    "citation_accuracy_threshold": 0.9,
+    "adversarial_pass_rate_threshold": 0.9,
+    "write_handoff_on_eval": true
+  },
+  "logging": {
+    "level": "INFO",
+    "redact_pii": true
+  }
+}

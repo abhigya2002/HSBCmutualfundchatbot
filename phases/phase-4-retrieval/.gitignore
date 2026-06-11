@@ -1,0 +1,9 @@
+artifacts/eval/*
+artifacts/service/*
+artifacts/logs/*
+!artifacts/eval/.gitkeep
+!artifacts/service/.gitkeep
+!artifacts/logs/.gitkeep
+__pycache__/
+*.pyc
+.pytest_cache/

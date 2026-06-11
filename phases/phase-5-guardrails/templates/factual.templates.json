@@ -1,0 +1,17 @@
+{
+  "$schema_comment": "Extractive factual answer templates for Phase 5.4 v1.",
+  "version": "1.0.0",
+  "sentence_templates": {
+    "expense_ratio": "The expense ratio is {value}.",
+    "exit_load": "The exit load is {value}.",
+    "min_sip": "The minimum SIP amount is {value}.",
+    "min_investment": "The minimum investment amount is {value}.",
+    "benchmark": "The fund benchmark is {value}.",
+    "riskometer": "The riskometer classification is {value}.",
+    "generic": "{sentence}"
+  },
+  "clarifiers": {
+    "performance_limited": "This reflects factual data from the official page and is not a return projection.",
+    "section": "This information is from the {section_title} section of the official scheme page."
+  }
+}

@@ -1,0 +1,97 @@
+# =============================================================================
+# Secrets — never commit
+# =============================================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Frontend local env (Next.js)
+phases/phase-6-api-ui/phase_6_5/frontend/.env*.local
+
+# =============================================================================
+# Python
+# =============================================================================
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =============================================================================
+# Node / Next.js
+# =============================================================================
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =============================================================================
+# OS & IDE
+# =============================================================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+.cursor/
+
+# =============================================================================
+# Unified data layout (Phase 8 refresh)
+# =============================================================================
+data/raw/
+data/processed/
+data/index/*
+!data/index/manifest.json
+!data/refresh/
+!data/refresh/content_hashes.json
+
+# =============================================================================
+# Phase pipeline artifacts (large, rebuild locally or in CI)
+# =============================================================================
+phases/**/artifacts/raw/
+phases/**/artifacts/clean/
+phases/**/artifacts/extracted/
+phases/**/artifacts/metadata/
+phases/**/artifacts/quarantine/
+phases/**/artifacts/chunks/
+phases/**/artifacts/chunks_validated/
+phases/**/artifacts/embeddings/
+phases/**/artifacts/indexes/
+phases/**/artifacts/snapshots/
+phases/**/artifacts/logs/
+phases/**/artifacts/eval/
+phases/**/artifacts/service/
+
+# Keep artifact directory placeholders if present
+!phases/**/artifacts/**/.gitkeep
+
+# =============================================================================
+# Vector / index binaries
+# =============================================================================
+**/*.npy
+**/*.faiss
+**/*.pkl
+**/*.bin
+**/*.sqlite
+**/*.db
+
+# =============================================================================
+# Model caches (sentence-transformers / Hugging Face)
+# =============================================================================
+.cache/
+models/
+.huggingface/

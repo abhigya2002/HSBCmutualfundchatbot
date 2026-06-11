@@ -1,0 +1,41 @@
+{
+  "$schema_comment": "Phase 3 — chunking defaults (architecture: ~300–600 tokens, 50–100 overlap).",
+  "chars_per_token_estimate": 4.0,
+  "target_tokens_min": 300,
+  "target_tokens_max": 600,
+  "overlap_tokens_min": 50,
+  "overlap_tokens_max": 100,
+  "default_strategy": "section_sliding_v1",
+  "phase2_artifact_root": "../phase-2-ingestion/artifacts",
+  "doc_type": "groww_scheme_page",
+  "default_compliance_rank": 1,
+  "artifact_root": "artifacts",
+  "directories": {
+    "chunks": "chunks",
+    "chunks_validated": "chunks_validated",
+    "embeddings": "embeddings",
+    "indexes": "indexes",
+    "logs": "logs"
+  },
+  "validation": {
+    "dedupe_identical_text": true,
+    "near_dup_enabled": false,
+    "near_dup_min_jaccard": 0.92
+  },
+  "embedding": {
+    "provider": "hash_v1",
+    "model_id": "hash-embedding-v1",
+    "dimensions": 384,
+    "batch_size": 32,
+    "max_input_tokens": 8192
+  },
+  "logging": {
+    "level": "INFO",
+    "redact_pii": true
+  },
+  "handoff": {
+    "indexable_extract_statuses": ["ok", "partial"],
+    "blocked_extract_statuses": ["parse_error", "empty_shell"],
+    "blocked_normalize_statuses": ["empty", "failed"]
+  }
+}

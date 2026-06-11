@@ -1,0 +1,14 @@
+{
+  "$schema_comment": "Phase 4.4 hybrid retrieval defaults.",
+  "version": "1.0.0",
+  "top_k_per_channel": 5,
+  "fused_pool_size": 12,
+  "scheme_filter_min_confidence": 0.82,
+  "keyword_empty_fallback": "vector",
+  "stopword_only_use_vector": true,
+  "allowlist_filter": true,
+  "interim_fusion": {
+    "method": "max_normalized_channel_score",
+    "note": "Phase 4.5 performs weighted fusion and re-ranking."
+  }
+}

@@ -1,0 +1,8 @@
+artifacts/indexes/keyword/**/*
+!artifacts/indexes/keyword/.gitkeep
+artifacts/phase3_keyword_build_report.json
+artifacts/hybrid_retrieval_contract.json
+artifacts/phase3_index_manifest.json
+artifacts/phase3_retrieval_benchmark_report.json
+artifacts/phase4_retrieval_handoff.json
+artifacts/snapshots/

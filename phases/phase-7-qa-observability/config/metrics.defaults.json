@@ -1,0 +1,27 @@
+{
+  "$schema_comment": "Phase 7.1 — live metrics collection defaults.",
+  "api_base_url": "http://127.0.0.1:8000",
+  "request_timeout_seconds": 60,
+  "freshness_sla_days": 30,
+  "url_probe_timeout_seconds": 25,
+  "directories": {
+    "artifacts": "artifacts",
+    "metrics": "artifacts/metrics",
+    "benchmarks": "benchmarks"
+  },
+  "paths": {
+    "source_registry": "../phase-1-corpus-registry/source_registry.json",
+    "corpus_manifest": "../phase-2-ingestion/artifacts/phase2_corpus_manifest.json",
+    "metadata_dir": "../phase-2-ingestion/artifacts/metadata",
+    "retrieval_probes": "benchmarks/retrieval_probes.json",
+    "refusal_probes": "benchmarks/refusal_probes.json"
+  },
+  "snapshot_filename": "phase7_1_metrics_snapshot.json",
+  "thresholds": {
+    "retrieval_hit_quality_min": 0.85,
+    "refusal_accuracy_min": 1.0,
+    "format_compliance_min": 0.95,
+    "source_reachable_min": 1.0,
+    "source_freshness_min": 0.95
+  }
+}

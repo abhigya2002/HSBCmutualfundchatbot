@@ -1,0 +1,18 @@
+{
+  "manifest_version": "1.0.0",
+  "updated_at": "2026-06-11T16:55:48.178530+00:00",
+  "schemes": {
+    "hsbc-dynamic-bond-fund-direct-growth": {
+      "url": "https://groww.in/mutual-funds/hsbc-dynamic-bond-fund-direct-growth",
+      "indexed_at": "2026-06-11T16:55:47.737299+00:00",
+      "content_hash": "cd87148a9d79002894979ab5eccc3c2e4e55706dc2b35958ca137d44bba8c5b7",
+      "index_record": "hsbc-dynamic-bond-fund-direct-growth.json"
+    },
+    "hsbc-gilt-fund-direct-growth": {
+      "url": "https://groww.in/mutual-funds/hsbc-gilt-fund-direct-growth",
+      "indexed_at": "2026-06-11T16:55:48.178530+00:00",
+      "content_hash": "8bbb5c9177d564c7f4332d2ee97dbc36924dcf69cf2380dd82503e8d03bf76cc",
+      "index_record": "hsbc-gilt-fund-direct-growth.json"
+    }
+  }
+}
