@@ -5,6 +5,8 @@ from __future__ import annotations
 import hashlib
 import re
 
+from bs4 import BeautifulSoup
+
 # Lines containing these patterns are excluded before hashing.
 _VOLATILE_LINE_PATTERNS: tuple[re.Pattern[str], ...] = (
     re.compile(r"\bNAV\b", re.IGNORECASE),
@@ -28,6 +30,14 @@ def strip_volatile_lines(text: str) -> str:
             continue
         kept.append(line)
     return "\n".join(kept)
+
+
+def html_to_stable_text(html: str) -> str:
+    """Extract visible text from HTML, dropping script/style noise before hashing."""
+    soup = BeautifulSoup(html, "html.parser")
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
+    return soup.get_text("\n", strip=True)
 
 
 def stable_content_hash(text: str) -> str:

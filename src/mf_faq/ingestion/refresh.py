@@ -11,7 +11,7 @@ from mf_faq.ingestion.config import CONTENT_HASHES_PATH, DRIFT_THRESHOLD, REFRES
 from mf_faq.ingestion.fetch import fetch_page_for_hash
 from mf_faq.ingestion.pipeline.service import Pipeline
 from mf_faq.ingestion.sources import SourceEntry, load_sources
-from mf_faq.ingestion.stable_hash import stable_content_hash
+from mf_faq.ingestion.stable_hash import html_to_stable_text, stable_content_hash
 
 log = logging.getLogger(__name__)
 
@@ -60,7 +60,7 @@ def run_refresh(*, hashes_path: Path | None = None) -> int:
             failed_urls.append(entry.url)
             continue
 
-        current_hash = stable_content_hash(result.text)
+        current_hash = stable_content_hash(html_to_stable_text(result.text))
         old_hash = previous.get(entry.url)
 
         if old_hash is None:
@@ -90,7 +90,7 @@ def run_refresh(*, hashes_path: Path | None = None) -> int:
             unchanged_count,
             baseline_count,
         )
-        return 1
+        return 0
 
     if changed_urls:
         pipeline = Pipeline()
