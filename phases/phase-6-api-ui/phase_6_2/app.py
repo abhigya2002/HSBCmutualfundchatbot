@@ -38,14 +38,18 @@ def create_app(
     origins = [str(x) for x in (cors.get("dev_origins") or [])]
     origins.extend(str(x) for x in (cors.get("prod_origins") or []))
     origins = list(dict.fromkeys(origins))
-    if origins:
-        app.add_middleware(
-            CORSMiddleware,
-            allow_origins=origins,
-            allow_credentials=True,
-            allow_methods=["GET", "POST", "OPTIONS"],
-            allow_headers=["Content-Type"],
-        )
+    origin_regex = str(cors.get("origin_regex") or "").strip() or None
+    if origins or origin_regex:
+        cors_kwargs: dict[str, Any] = {
+            "allow_credentials": True,
+            "allow_methods": ["GET", "POST", "OPTIONS"],
+            "allow_headers": ["Content-Type"],
+        }
+        if origins:
+            cors_kwargs["allow_origins"] = origins
+        if origin_regex:
+            cors_kwargs["allow_origin_regex"] = origin_regex
+        app.add_middleware(CORSMiddleware, **cors_kwargs)
 
     log_cfg = dict(cfg.get("logging") or {})
     app.add_middleware(RequestLoggingMiddleware, redact_pii=bool(log_cfg.get("redact_pii", True)))

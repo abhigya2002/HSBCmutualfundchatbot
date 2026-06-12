@@ -37,8 +37,10 @@
     ],
     "prod_origins": [
       "https://hsb-cmutualfundchatbot-w6v9.vercel.app",
-      "https://hsb-cmutualfundchatbot.vercel.app"
-    ]
+      "https://hsb-cmutualfundchatbot.vercel.app",
+      "https://hsbc-cmutualfundchatbot-w6v9.vercel.app"
+    ],
+    "origin_regex": "^https://.*\\.vercel\\.app$"
   },
   "logging": {
     "level": "INFO",
